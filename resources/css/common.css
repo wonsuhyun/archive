@@ -1,0 +1,7 @@
+@import url("reset.css");
+.wrapper { 
+	width : 100%; 
+	position: relative;
+	min-height: 100vh;
+	font-family: 'NotoSans';
+}
