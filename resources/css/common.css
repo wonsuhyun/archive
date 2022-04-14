@@ -3,12 +3,11 @@
 .wrapper { 
 	width : 100%; 
 	min-height: 100vh;
-	background-color: #3e4243;
 }
 
 .wrapper *{ 
 	transition: all 0.2s;
-	color: #fff;
+	color: #000000;
 }
 
 .container{
@@ -169,23 +168,157 @@ input[disabled]{
 }
 button {
 	text-align: center;
-	padding:0 5px;
-	font-size: 24px;
-	font-weight: 800;
+}
+.al_center {
+	text-align: center;
+}
+.red {
+	color: #d8191f;
+}
+.tb {
+	display: table;
+	width:100%;
+}
+.tb  > div {
+	display: table-cell;
+	text-align: center;
+	width: 50%;
+}
+.tb > div.right{
+	text-align: right;
+}
+.tb > div.left{
+	text-align: left;
+}
+.tb.type3 > div{
+	width: 33.333%;
+}
+.tb.type4 > div{
+	width: 25%;
+}
+.tb.type5 > div{
+	width: 20%;
+}
+.form_type {
+	width: 100%;
+}
+.form_type .title {
+	width: 100%;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+}
+.form_type input[type=text],.form_type input[type=password],.form_type input[type=tel]{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+	font-size: 13px;
+	padding: 8px 0;
+}
+.form_type > div {
+	margin-top: 25px;
 }
 
 /*
 =======================================================================
-
+intro
 =======================================================================
 */
-
-.title {
-	font-size: 20px;
+.gray_box {
+	background-color: #f6f7f7;
+}
+.pg_title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 600;
+	padding-top: 50px;
+}
+.intro .intro_cmt {
+	font-size: 32px;
+	text-align: center;
+}
+.intro .section_title{
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 70px;
+	position: relative;
+	margin-top: 50px;
+}
+.intro .section_title:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 40px;
+	background-color: #000000;
+	bottom: 0;
+	left: 50%;
+}
+.intro .section_title span {
 	font-weight: 900;
-	padding: 15px 50px;
-	background-color:#313536 ;
-	border-bottom: 10px solid #3e4243;
+}
+.intro > .gray_box {
+	padding: 50px 0;
+} 
+.intro > .gray_box > .red {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.intro .redir_tab {
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
+.intro .redir_tab > div {
+	padding: 0 4px;
+}
+.intro .redir_tab a{
+	padding: 20px 0;
+	display: inline-block;
+	width: 100%;
+	font-size: 20px;
+	border-bottom: 1px solid #5a5a5a;
+	color: #5a5a5a;
+}
+.intro .redir_tab .on a {
+	border-bottom: 2px solid #000;
+	color: #000;
+	font-weight:  600;
+}
+.intro .part2 .keywords{
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+.intro .part2 .keywords > span {
+	display: inline-block;
+	padding: 15px 0;
+	width: 205px;
+	text-align: center;
+	border-radius: 50px;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+}
+.intro .part2 .keywords > span:nth-of-type(2),.intro .part2 .keywords > span:nth-of-type(3){
+	margin-left: -30px;
+}
+.intro .part2 .gray_box {
+	padding: 50px 0;
+}
+.intro .part2 .gray_box .red {
+	font-size: 30px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.intro .part3 .gray_box {
+	padding: 50px 0;
+}
+.intro .part3 .context_box {
+	max-width: 500px;
+	padding: 50px 60px ;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
 }
 
 @media (max-width: 1000px) {

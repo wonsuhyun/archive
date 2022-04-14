@@ -49,7 +49,7 @@ button {
 body, th, td, input, select, textarea, button, select {
 	color: #111;
 	font-family: noto;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.5;
 	letter-spacing: -0.4px;
 }
