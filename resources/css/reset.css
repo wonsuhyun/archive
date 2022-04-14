@@ -3,9 +3,7 @@
 	Reset
 ============================================================================================ */
 
-body,h1,h2,h3,h4,h5,h6,table,div,header,section,a,ul,li,tr,td,th,tbody,thead,tfoot,ol,button,input,select,p{
-	margin: 0; padding:0 ; box-sizing: border-box;
-}
+body,h1,h2,h3,h4,h5,h6,table,div,header,section,a,ul,li,tr,td,th,tbody,thead,tfoot,ol,button,input,select,p{margin: 0; padding:0 ; box-sizing: border-box;}
 
 nav, ul{
   list-style:none
@@ -48,18 +46,19 @@ button {
 	cursor: pointer;
 }
 
-body, th, td, input, select, textarea, button, select,a {
-	color: #232121;
-	font-family: ibm;
-	font-size: 15px;
+body, th, td, input, select, textarea, button, select {
+	color: #111;
+	font-family: noto;
+	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: -0.4px;
 }
 
 body {
-	overflow-x: hidden;
-	width: 100vw;
+	overflow-x: auto;
+	width: 100%;
 }
+
 
 input[type=submit] {
 	border-radius: 0;
@@ -73,14 +72,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-	color: #2f3242;
+	color: #111;
 	text-decoration: none;
 }
 
 a:active, a:hover {
 	text-decoration: none;
-} 
-/* hover */
+} /* hover */
 address, caption, cite, code, dfn, em, var {
 	font-style: normal;
 }
@@ -127,6 +125,9 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 	padding: 0 15px;
 	box-sizing: border-box;
 	border-radius: 0;
+	border: 1px solid;
+	border-color:#d2d2d2;
+	background-color: #fff;
 	color: #111;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -175,11 +176,9 @@ textarea:-ms-input-placeholder {
 }
 
 select {
-	height: 34px;
-	line-height: 34px;
-	padding: 0 10px 0 14px;
-	border: 1px solid #e7e7e7;
-	border-radius: 4px;
+	height: 40px;
+	padding: 0 40px 0 14px;
+	border: 1px solid #ccc;
 	background-color: #fff;
 	box-sizing: border-box;
 }
