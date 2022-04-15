@@ -33,8 +33,8 @@ $(document).ready(function(){
 	});
 
 
-	$('.layer-popup .popup .popClose').on("click",function(){
-		$(this).parents(".layer-popup").removeClass("on")
+	$('.layer_popup .popup .pop_close').on("click",function(){
+		$(this).parents(".layer_popup").removeClass("on")
 	})
 
 	popup();
@@ -48,11 +48,11 @@ function scrollEvent(){
 
 //리사이즈 이벤트
 function resizeWindow(){
-
+	popup()
 }
 
 function popup() {
-    $('.layer-popup .popup').each(function() {
+    $('.layer_popup .popup').each(function() {
         var popW = $(this).outerWidth();
         var popH = $(this)[0].scrollHeight;
         $(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2}).attr('data', popH);
@@ -60,16 +60,16 @@ function popup() {
         var winH = $(window).height();
         var data = Number($(this).attr('data'));
         if (data > winH) {
-            $(this).closest('.layer-popup').addClass('h-full');
+            $(this).closest('.layer_popup').addClass('h-full');
         } else {
-            $(this).closest('.layer-popup').removeClass('h-full');
+            $(this).closest('.layer_popup').removeClass('h-full');
         }
     });
 }
 
 var XSP = {
 	makeConfirmPopup(title,txt,btn,callback){
-		var html = "<div class='layer-popup confirm on' layer-type='layer03'>"
+		var html = "<div class='layer_popup confirm on' layer-type='layer03'>"
 		html+="<div class='popup'>"
 		html+="<h3 class='pop-tit'>"+title+"</h3>"
 		html+="<div class='pop-conts'>" 
