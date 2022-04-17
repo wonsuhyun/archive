@@ -183,6 +183,16 @@ input[type=checkbox] + label::after{
 	left: 0;
 	top: 0;
 }
+input[type=checkbox]:checked + label::after{
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 1px solid #cdcdcd;
+	background-color: #c9242b;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 .al_center {
 	text-align: center;
 }
@@ -221,25 +231,46 @@ input[type=checkbox] + label::after{
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 600;
+	margin-bottom: 5px;
 }
 .form_type input[type=text],.form_type input[type=password],.form_type input[type=tel]{
 	width: 100%;
 	border: none;
-	border-bottom: 1px solid #000;
+	border-bottom: 2px solid #000;
 	font-size: 13px;
 	padding: 8px 0;
+}
+.form_type input[type=text].fail,
+.form_type input[type=password].fail,
+.form_type input[type=tel].fail {
+	border-color: #c9242b;
 }
 .form_type > div {
 	margin-top: 25px;
 }
-
-.form_type.type1 input[type=text],.form_type input[type=password],.form_type input[type=tel] {
+.form_type .form_cmt {
+	font-size: 14px;
+	margin-top: 10px;
+}
+.form_type.type1 input[type=text],.form_type.type1 input[type=password],.form_type.type1 input[type=tel] {
 	border: 1px solid #b4b4b4;
 	padding-left: 20px ;
 	padding-right: 20px ;
 }
 .form_type.type1 > div {
 	margin-top: 8px;
+}
+.form_type .required .title {
+	position: relative;
+	display: inline-block;
+	width: auto;
+}
+.form_type .required .title::after {
+	content: "*";
+	color: #c9242b;
+	position: absolute;
+	right: -12px;
+	top: 3px;
 }
 .tooltip {
 	display: inline-block;
@@ -248,6 +279,39 @@ input[type=checkbox] + label::after{
 	background: url(../img/icon_tooltip.png) no-repeat center / contain;
 	vertical-align: middle;
 	margin-right:8px;
+}
+.red .tooltip {
+	background: url(../img/icon_tooltip_red.png) no-repeat center / contain;
+}
+.notice{
+	font-size: 14px;
+}
+.notice li:first-child {
+	margin-bottom: 10px;
+}
+.notice .red li {
+	color: #c9242b;
+}
+.accodian .acc_btn {
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	right: 0;
+	background: url(../img/acc_off.png);
+}
+.accodian .acc_btn.on{
+	background: url(../img/acc_on.png);
+}
+.accodian .acc_conts {
+	margin-top: 10px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 15px 0;
+	font-size: 14px;
+	font-weight: 200;
+	color: #515151;
+	display: none;
 }
 /*
 =======================================================================
@@ -322,6 +386,10 @@ popup
 	font-weight: 600;
 	margin-top: 30px;
 }
+.layer_popup  .cont_title.border_b {
+	border-bottom: 1px solid #ededed;
+	padding-bottom: 20px;
+}
 .layer_popup .pop_btn {
 	width:100%;
 	padding: 10px 0;
@@ -354,6 +422,19 @@ popup
 }
 .layer_popup  .deep_wrap {
 	padding: 0 60px;
+}
+.layer_popup.h_full .conts{
+	height: calc( 100vh - 87px);
+	overflow-y: auto;
+}
+.layer_popup .btm_box {
+	padding-top: 15px;
+	border-top: 1px solid #000;
+	font-size: 14px;
+}
+.layer_popup .btm_box a {
+	padding-right: 20px;
+	background: url(../img/arrow.png) no-repeat right 5px ;
 }
 /*
 =======================================================================
@@ -514,33 +595,95 @@ login
 	margin-bottom: 35px;
 }
 
-.login .btm_box {
-	padding-top: 15px;
-	border-top: 1px solid #000;
-	font-size: 14px;
-}
-.login .btm_box a {
-	padding-right: 20px;
-	background: url(../img/arrow.png) no-repeat right 5px ;
-}
+
 /*
 =======================================================================
 email_none
 =======================================================================
 */
-.email_none .cmts{
-	font-size: 14px;
-}
-.email_none .cmts li:first-child {
-	margin-bottom: 10px;
-	color: #c9242b;
-}
+
+
 .email_none .gray_box {
 	padding: 25px 0;
 	background-color: #f0f0f0;
 	border: 1px solid #e1e1e1;
 	margin-bottom: 45px;
 }
+/*
+=======================================================================
+이메일 발송안내
+=======================================================================
+*/
+.send_mail .mail_icon{
+	position: relative;
+	height: 60px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.send_mail .mail_icon > .img_wrap {
+	position: absolute;
+	left: calc( 50% - 60px);
+	padding: 0 30px;
+	background-color: #fff;
+	z-index: 9;
+}
+.send_mail .mail_icon:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #ededed;
+	left: 0;
+	top: 50%;
+	z-index: 1;
+}
+/*
+=======================================================================
+이메일 발송안내
+=======================================================================
+*/
+.join .btm_box {
+	margin-top: 45px;
+}
+.join .btm_box.tb > div:first-child {
+	width: 60%;
+}
+.join  .kakao{
+	position: relative;
+}
+.join  .kakao .add_cmt {
+	position: absolute;
+	top: -45px;
+	right: 0;
+	display: inline-block;
+	padding: 10px 15px 20px 15px;
+	background: url(../img/bg_word.png) no-repeat center / contain;
+	color: #fee500;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+
+.join_step .term {
+	font-size: 14px;
+	font-weight: 200;
+	border-top: 1px solid #000;
+	padding-top: 20px;	
+}
+.join_step .all_check {
+	margin-bottom: 25px;
+	border-top: 1px solid #000;
+	padding-top: 15px;
+}
+.join_step .check_item {
+	position: relative;
+	margin-bottom: 12px;
+}
+
+.email_send .btm_wrap{
+	margin-top: 45px;
+}
+
 @media (max-width: 1000px) {
 	.container {
 		padding: 0 30px;
@@ -557,12 +700,18 @@ email_none
 		padding: 0 25px;
 	}
 	.layer_popup  .deep_wrap {
-		padding: 0 30px;
+		padding: 0;
 	}
 
 	.layer_popup .basic_wrap{
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
+	.notice {
+		font-size: 13px;
+	}
+	.tooltip {
+		width:18px;
+		height:18px;
+	}
 }

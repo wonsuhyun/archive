@@ -10,15 +10,36 @@ $(document).ready(function(){
 		$(this).parents('.tab').find('.tab-item .item:eq('+idx+')').addClass('on')
 	})
 
-	$(".accodian .tit").on("click",function(){
+	$(".accodian .acc_btn").on("click",function(){
 		if ($(this).hasClass("on")){
 			$(this).removeClass("on")
-			$(this).parent(".accodian").find(".content").stop().slideUp(200)
+			$(this).parent(".accodian").find(".acc_conts").stop().slideUp(200)
 		}else{
 			$(this).addClass("on")
-			$(this).parent(".accodian").find(".content").slideDown(200)
+			$(this).parent(".accodian").find(".acc_conts").slideDown(200)
 		}
 		
+	})
+
+	$(".checkboxs .all_check input[type=checkbox]").on("change",function(){
+		var child = $(this).parents(".checkboxs").find(".check_item input[type=checkbox]");
+		if ($(this).prop("checked")){
+			child.prop("checked",true);
+		}else{
+			child.prop("checked",false);
+		}
+	})
+	$(".checkboxs .check_item input[type=checkbox]").on("change",function(){
+		var parent = $(this).parents(".checkboxs").find(".all_check input[type=checkbox]");
+		var child = $(this).parents(".checkboxs").find(".check_item input[type=checkbox]");
+		var flag = true;
+		child.each(function(i,v){
+			if (!$(v).prop("checked")){
+				flag=false;
+				return false;
+			}
+		})
+		parent.prop("checked",flag)
 	})
 
 	$(window).scroll(function(e) {
@@ -54,16 +75,18 @@ function resizeWindow(){
 function popup() {
     $('.layer_popup .popup').each(function() {
         var popW = $(this).outerWidth();
-        var popH = $(this)[0].scrollHeight;
-        $(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2}).attr('data', popH);
-
-        var winH = $(window).height();
-        var data = Number($(this).attr('data'));
-        if (data > winH) {
-            $(this).closest('.layer_popup').addClass('h-full');
+		var popH = $(this)[0].scrollHeight;
+		var winH = $(window).height();
+		if (popH > winH) {
+            $(this).closest('.layer_popup').addClass('h_full');
         } else {
-            $(this).closest('.layer_popup').removeClass('h-full');
-        }
+            $(this).closest('.layer_popup').removeClass('h_full');
+		}
+
+		popH = popH > winH ? winH : popH;
+
+        $(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})		
+		
     });
 }
 
