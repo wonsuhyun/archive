@@ -238,7 +238,8 @@ input[type=checkbox]:checked + label::after{
 	border: none;
 	border-bottom: 2px solid #000;
 	font-size: 13px;
-	padding: 8px 0;
+	padding: 12px 0;
+	height: 48px;
 }
 .form_type input[type=text].fail,
 .form_type input[type=password].fail,
@@ -259,6 +260,12 @@ input[type=checkbox]:checked + label::after{
 }
 .form_type.type1 > div {
 	margin-top: 8px;
+}
+.form_type .required.pw input{
+	background: url(../img/icon_show.png) no-repeat right center ;
+}
+.form_type .required.pw input.fail{
+	background: url(../img/icon_show_fail.png) no-repeat right center ;
 }
 .form_type .required .title {
 	position: relative;
@@ -372,13 +379,14 @@ popup
 	max-height: calc( 100vh - 40px );
 	overflow-y: auto;
 }
-.layer_popup .popup {
-	padding: 0 30px
-}
 .layer_popup  .pop_header {
-	padding: 25px 0 20px 0;
-	border-bottom: 2px solid #000;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.layer_popup  .pop_header .header_conts {
 	position: relative;
+	border-bottom: 2px solid #000;
+	padding: 25px  0 20px 0;
 }
 .layer_popup  .cont_title {
 	text-align: center;
@@ -414,7 +422,7 @@ popup
 }
 .layer_popup .conts .cont_sub_tit {
 	text-align: center;
-	margin: 15px 0 25px 0;
+	margin: 15px 0 35px 0;
 }
 .layer_popup .basic_wrap {
 	padding-left: 25px;
@@ -423,9 +431,11 @@ popup
 .layer_popup  .deep_wrap {
 	padding: 0 60px;
 }
-.layer_popup.h_full .conts{
+.layer_popup.h_full .scroll_area{
 	height: calc( 100vh - 87px);
 	overflow-y: auto;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 .layer_popup .btm_box {
 	padding-top: 15px;
@@ -594,7 +604,18 @@ login
 	margin-top: 20px;
 	margin-bottom: 35px;
 }
-
+.login .find_area > div:first-child {
+	position: relative;
+}
+.login .find_area > div:first-child:after{
+	content: "";
+	position: absolute;
+	height: 12px;
+	width: 1px;
+	background-color: #ededed;
+	right: 3px;
+	top: 5px;
+}
 
 /*
 =======================================================================
@@ -678,6 +699,7 @@ email_none
 .join_step .check_item {
 	position: relative;
 	margin-bottom: 12px;
+	font-size: 14px;
 }
 
 .email_send .btm_wrap{
@@ -697,7 +719,13 @@ email_none
 		height: 100vh;
 		width: 100vw;
 		max-width: none;
+	}
+	.layer_popup .scroll_area {
 		padding: 0 25px;
+	}
+	.layer_popup  .pop_header {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 	.layer_popup  .deep_wrap {
 		padding: 0;

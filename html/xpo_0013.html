@@ -16,11 +16,13 @@
     <div class="layer_popup on">
       <div class="popup"> 
         <div class="pop_header">
-          <img src="../resources/img/logo.png" alt="엑스포츠"/>
-          <button class="pop_close"></button>
+          <div class="header_conts">
+            <a href="#"><img src="../resources/img/logo.png" alt="엑스포츠"/></a>
+            <button class="pop_close"></button>
+          </div>
         </div>
-        <div class="conts join_step">
-            
+        <div class="scroll_area">
+          <div class="conts join_step">
             <div class="basic_wrap">
               <p class="cont_title">회원가입</p>
               <div class="form_type">
@@ -31,13 +33,16 @@
                     <span class="tooltip"></span>이메일을 입력해주세요.
                   </p>
                 </div>
-                <div class="required">
+                <div class="required pw">
                   <label class="title">비밀번호</label>
                   <input type="password" placeholder="영문대소문자, 숫자, 특수문자혼용 8-20자까지 가능합니다."/>
                 </div>
-                <div class="required">
+                <div class="required pw">
                   <label class="title">비밀번호 재입력</label>
-                  <input type="password" placeholder="비밀번호를 다시한번 입력하세요."/>
+                  <input type="password" class="fail" placeholder="비밀번호를 다시한번 입력하세요."/>
+                  <p class="form_cmt red">
+                    <span class="tooltip"></span>비밀번호를 입력해주세요.
+                  </p>
                 </div>
                 <div class="required">
                   <label class="title">약관동의</label>
@@ -60,7 +65,7 @@
                     </div>
                     <div class="check_item accodian">
                       <input type="checkbox" id="check2"/>
-                      <label for="check2">(필수) 만 14세 이상입니다.</label>
+                      <label for="check2">(필수) 이용약관</label>
                       <span class="acc_btn"></span>
                       <div class="acc_conts">
                         뉴스레터·이벤트·프로모션 정보 수신 동의 수집 및 이용, 뉴스레터·이벤트·프로모션 정보 수신 동의(선택) 내용을 확인하였으며, 동의합니다.
@@ -68,7 +73,7 @@
                     </div>
                     <div class="check_item accodian">
                       <input type="checkbox" id="check3"/>
-                      <label for="check3">(필수) 만 14세 이상입니다.</label>
+                      <label for="check3">(필수) 개인정보 수집 및 이용</label>
                       <span class="acc_btn"></span>
                       <div class="acc_conts">
                         뉴스레터·이벤트·프로모션 정보 수신 동의 수집 및 이용, 뉴스레터·이벤트·프로모션 정보 수신 동의(선택) 내용을 확인하였으며, 동의합니다.
@@ -76,7 +81,7 @@
                     </div>
                     <div class="check_item accodian">
                       <input type="checkbox" id="check4"/>
-                      <label for="check4">(필수) 만 14세 이상입니다.</label>
+                      <label for="check4">(선택) 뉴스레터·이벤트·프로모션 정보 수신 동의</label>
                       <span class="acc_btn"></span>
                       <div class="acc_conts">
                         뉴스레터·이벤트·프로모션 정보 수신 동의 수집 및 이용, 뉴스레터·이벤트·프로모션 정보 수신 동의(선택) 내용을 확인하였으며, 동의합니다.
@@ -89,6 +94,8 @@
               <button class="pop_btn mgt40">이메일로 회원가입하기</button>
             </div>
         </div>
+        </div>
+        
       </div>
     </div>
   </div>
