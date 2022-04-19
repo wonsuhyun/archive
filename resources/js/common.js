@@ -15,7 +15,6 @@ $(document).ready(function(){
 			$(this).removeClass("on")
 			$(this).parent(".accodian").find(".acc_conts").stop().slideUp(200)
 		}else{
-			
 			$(this).parents(".accodians").find(".acc_btn").removeClass("on")
 			$(this).parents(".accodians").find(".acc_conts").stop().slideUp(200);
 			$(this).addClass("on");

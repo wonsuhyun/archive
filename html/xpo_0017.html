@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="../resources/css/common.css">
-  <link rel="stylesheet" type="text/css" href="../../resources/swiper/dist/css/swiper.min.css">
-  <script type="text/javascript" src="../../resources/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="../../resources/js/jquery-ui.1.12.1.js"></script>
-  <script type="text/javascript" src="../../resources/js/common.js"></script>
-  <script type="text/javascript" src="../../resources/swiper/dist/js/swiper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../resources/swiper/dist/css/swiper.min.css">
+  <script type="text/javascript" src="../resources/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../resources/js/jquery-ui.1.12.1.js"></script>
+  <script type="text/javascript" src="../resources/js/common.js"></script>
+  <script type="text/javascript" src="../resources/swiper/dist/js/swiper.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
  <body>
@@ -144,23 +144,47 @@
                       </div>
                       
                     </div>
-                    <div class="required">
-                      <input type="checkbox"/><label for="">(필수) 개인정보 수집, 이용 동의</label>
-                      <span class="toggle_btn"></span>
-                      <div>
-                        <p>개인정보 수집, 이용에 대한 안내</p>
+                    <div class="required accodian">
+                      <input type="checkbox" id="test"/>
+                      <label for="test">(필수) 개인정보 수집, 이용 동의
+                      </label>
+                      <span class="acc_btn"></span>
+                      <div class="acc_conts">
+                        <p class="tit">개인정보 수집, 이용에 대한 안내</p>
                         <p>
                           필수 수집 이용 항목 문의접수와 처리, 회신을 위한 최소한의 개인정보
                           입니다.  동의가 필요합니다. 
                         </p>
                         <table>
-
+                          <thead>
+                            <th>수집항목</th>
+                            <th>목적</th>
+                            <th>보유기간</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                이름, 이메일, 
+                                전화번호(선택), 
+                                문의 및 상담 내용
+                              </td>
+                              <td>
+                                고객 문의 및 상담요청에 
+                                대한 회신, 상담을 위한 
+                                서비스 이용기록 조회
+                              </td>
+                              <td class="red">
+                                3년간 보관 후
+                                지체없이 파기
+                              </td>
+                            </tr>
+                          </tbody>
                         </table>
                       </div>
                     </div>
                   </div>
                 </div>
-                
+
 
             </div>
           </section>
@@ -169,8 +193,8 @@
               <span>04</span><br>
               찾아오시는 길
             </p>
-            <p>
-              주소 : 서울시 강남구 테헤란로 8길 11-4(역삼동) 신도빌딩 7층 (135-933) 엑스포츠미디어
+            <p class="al_center mgt20 mgb20">
+              주소 : 서울시 강남구 테헤란로 8길 11-4(역삼동) 신도빌딩 7층 (135-933) 엑스포츠미디어<br>
               Tel: 02-3448-5940-1    Fax: 02-3448-5942  
             </p>
 
