@@ -431,12 +431,14 @@ popup
 .layer_popup  .deep_wrap {
 	padding: 0 60px;
 }
-.layer_popup.h_full .scroll_area{
+.layer_popup.h_full .popup{
+	top: 0;
+}
+.layer_popup .scroll_area{
 	height: calc( 100vh - 87px);
 	overflow-y: auto;
 	padding-right: 30px;
 	padding-left: 30px;
-	top: 0;
 }
 .layer_popup .btm_box {
 	padding-top: 15px;
