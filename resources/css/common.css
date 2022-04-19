@@ -437,6 +437,79 @@ input:checked + .slider:before {
 .btn_wrap > div:last-child {
 	padding-left: 5px;
 }
+.section_title{
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 70px;
+	position: relative;
+	margin-top: 50px;
+}
+.section_title:after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 40px;
+	background-color: #000000;
+	bottom: 0;
+	left: 50%;
+}
+.section_title span {
+	font-weight: 900;
+}
+.btn_wrap {
+	text-align: center;
+}
+.btn_type {
+	width:100%;
+	max-width: 380px;
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 50px;
+	color: #fff;
+	background: #2f2f2f;
+	text-align: center;
+}
+.btn_type.red {
+	background: #d8191f;
+}
+p.pg_title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 600;
+	padding-top: 50px;
+}
+.pagenation{
+	overflow: hidden;
+	margin: 0 auto;
+	width: fit-content;
+	margin-top: 60px;
+}
+.pagenation ul {
+	overflow: hidden;
+	float: left;
+}
+.pagenation a {
+	float: left;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	border: 1px solid #e3e3e3;
+	margin-left: 5px;
+}
+
+.pagenation ul li{
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+	font-weight: 200;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 5px;
+}
 /*
 =======================================================================
 popup
@@ -598,25 +671,7 @@ intro
 	padding: 20px 70px;
 	margin: 25px 0 50px 0;
 }
-.intro .section_title{
-	text-align: center;
-	font-size: 30px;
-	padding-bottom: 70px;
-	position: relative;
-	margin-top: 50px;
-}
-.intro .section_title:after{
-	content: "";
-	position: absolute;
-	width: 1px;
-	height: 40px;
-	background-color: #000000;
-	bottom: 0;
-	left: 50%;
-}
-.intro .section_title span {
-	font-weight: 900;
-}
+
 .intro > .gray_box {
 	padding: 50px 0;
 } 
@@ -992,6 +1047,111 @@ email_none
 	margin-bottom: 20px;
 	margin-top: 35px;
 	font-size: 20px;
+}
+/*
+=======================================================================
+채용
+=======================================================================
+*/
+
+.incruit .cmt {
+	background: url(../img/bg_txt2.png) no-repeat center / contain;
+	padding: 20px 0;
+	margin: 15px 0 85px 0;
+}
+.incruit .gray_box{
+	padding: 50px 0;
+	max-width: 900px;
+	margin: 0 auto;
+}
+/*
+=======================================================================
+공지사항
+=======================================================================
+*/
+.search_top {
+	width: 100%;
+	overflow: hidden;
+}
+.search_top > div {
+	width : 50%;
+	float: left;
+}
+.search_top .left button {
+	width: 100px;
+	padding: 10px 0;
+}
+.search_top .left button.on {
+	background-color: #d8191f;
+	color: #fff;
+	border-radius: 50px;
+}
+.search_top input{
+	border: none;
+}
+.search_top input:read-only {
+	background-color: #fff;
+}
+.search_top .right .input_wrap{
+	border: 1px solid #cdcdcd;
+	border-radius: 50px;
+	overflow: hidden;
+	width: 100%;
+}
+.search_top .right .input_wrap > div {
+	border-left: 1px solid #cdcdcd;
+}
+.search_top .right .input_wrap > div:first-child{
+	border-left: none
+}
+.search_top .right .input_wrap input {
+	width: 100%;
+}
+.table_type{
+	border-top: 1px solid #000;
+}
+.table_type .flex_type {
+	padding: 30px 0;
+	border-bottom: 1px solid #e3e3e3
+}
+.table_type .flex_type span{
+	display: inline-block;
+}
+.table_type .flex_type span:nth-of-type(1) {
+	width: 10%;
+	text-align: center;
+}
+.table_type .flex_type span:nth-of-type(2) {
+	width: 50%;
+	font-weight: 600;
+}
+.table_type .flex_type span:nth-of-type(3) {
+	width: 20%;
+	font-weight: 200;
+	color: #878787;
+	text-align: center;
+}
+.table_type .flex_type span:nth-of-type(4) {
+	width: 10%;
+	font-weight: 200;
+	color: #878787;
+	text-align: center;
+}
+.table_type .flex_type span:nth-of-type(5) {
+
+}
+.table_type  .accodian .acc_btn {
+	background: url(../img/acc_off2.png) no-repeat center / contain;
+}
+.table_type  .accodian .acc_btn.on {
+	background: url(../img/acc_on2.png) no-repeat center / contain;
+}
+.table_type  .accodian .acc_conts {
+	margin-top: 0;
+	background-color: #fafbfb;
+	padding: 30px 80px;
+	border:none;
+	border-bottom: 1px solid #e3e3e3
 }
 @media (max-width: 1000px) {
 	.container {

@@ -13,12 +13,12 @@ $(document).ready(function(){
 	$(".accodian .acc_btn").not(".display").on("click",function(){
 		if ($(this).hasClass("on")){
 			$(this).removeClass("on")
-			$(this).parent(".accodian").find(".acc_conts").stop().slideUp(200)
+			$(this).parents(".accodian").find(".acc_conts").stop().slideUp(200)
 		}else{
 			$(this).parents(".accodians").find(".acc_btn").removeClass("on")
 			$(this).parents(".accodians").find(".acc_conts").stop().slideUp(200);
 			$(this).addClass("on");
-			$(this).parent(".accodian").find(".acc_conts").slideDown(200);
+			$(this).parents(".accodian").find(".acc_conts").slideDown(200);
 			
 		}
 	})
