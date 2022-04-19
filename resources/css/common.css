@@ -436,6 +436,8 @@ popup
 	overflow-y: auto;
 	padding-right: 30px;
 	padding-left: 30px;
+	top: 0;
+
 }
 .layer_popup .btm_box {
 	padding-top: 15px;
@@ -741,5 +743,11 @@ email_none
 	.tooltip {
 		width:18px;
 		height:18px;
+	}
+}
+
+@media (max-width: 380px) {
+	.layer_popup .conts .cont_sub_tit{
+		font-size: 14px;
 	}
 }

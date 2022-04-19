@@ -81,12 +81,8 @@ function popup() {
             $(this).closest('.layer_popup').addClass('h_full');
         } else {
             $(this).closest('.layer_popup').removeClass('h_full');
+			$(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})
 		}
-
-		popH = popH > winH ? winH : popH;
-
-        $(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})		
-		
     });
 }
 
