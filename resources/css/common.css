@@ -435,7 +435,7 @@ popup
 	top: 0;
 }
 .layer_popup .scroll_area{
-	height: calc( 100vh - 87px);
+	max-height: calc( 100vh - 87px);
 	overflow-y: auto;
 	padding-right: 30px;
 	padding-left: 30px;

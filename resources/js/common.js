@@ -10,7 +10,7 @@ $(document).ready(function(){
 		$(this).parents('.tab').find('.tab-item .item:eq('+idx+')').addClass('on')
 	})
 
-	$(".accodian .acc_btn").on("click",function(){
+	$(".accodian .acc_btn").not(".display").on("click",function(){
 		if ($(this).hasClass("on")){
 			$(this).removeClass("on")
 			$(this).parent(".accodian").find(".acc_conts").stop().slideUp(200)
@@ -18,7 +18,6 @@ $(document).ready(function(){
 			$(this).addClass("on")
 			$(this).parent(".accodian").find(".acc_conts").slideDown(200)
 		}
-		
 	})
 
 	$(".checkboxs .all_check input[type=checkbox]").on("change",function(){
@@ -73,6 +72,7 @@ function resizeWindow(){
 }
 
 function popup() {
+	debugger
     $('.layer_popup .popup').each(function() {
         var popW = $(this).outerWidth();
 		var popH = $(this)[0].scrollHeight;
