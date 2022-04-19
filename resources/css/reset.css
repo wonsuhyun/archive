@@ -146,7 +146,7 @@ input::-ms-clear {
 
 textarea {
 	width: 100%;
-	padding: 7px 17px;
+	padding: 10px 10px;
 	border: 1px solid #c9c9c9;
 	border-radius: 0;
 	background-color: #fff;

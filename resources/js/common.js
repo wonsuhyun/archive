@@ -15,8 +15,12 @@ $(document).ready(function(){
 			$(this).removeClass("on")
 			$(this).parent(".accodian").find(".acc_conts").stop().slideUp(200)
 		}else{
-			$(this).addClass("on")
-			$(this).parent(".accodian").find(".acc_conts").slideDown(200)
+			
+			$(this).parents(".accodians").find(".acc_btn").removeClass("on")
+			$(this).parents(".accodians").find(".acc_conts").stop().slideUp(200);
+			$(this).addClass("on");
+			$(this).parent(".accodian").find(".acc_conts").slideDown(200);
+			
 		}
 	})
 
@@ -72,7 +76,6 @@ function resizeWindow(){
 }
 
 function popup() {
-	debugger
     $('.layer_popup .popup').each(function() {
         var popW = $(this).outerWidth();
 		var popH = $(this)[0].scrollHeight;

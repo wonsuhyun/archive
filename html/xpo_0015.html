@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+  <link rel="stylesheet" type="text/css" href="../resources/swiper/dist/css/swiper.min.css">
+  <script type="text/javascript" src="../resources/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../resources/js/jquery-ui.1.12.1.js"></script>
+  <script type="text/javascript" src="../resources/js/common.js"></script>
+  <script type="text/javascript" src="../resources/swiper/dist/js/swiper.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <div class="wrapper" style="width: 100%;">
+    <div class="layer_popup on">
+      <div class="popup"> 
+        <div class="pop_header">
+          <div class="header_conts">
+            <a href="#"><img src="../resources/img/logo.png" alt="엑스포츠"/></a>
+            <button class="pop_close"></button>
+          </div>
+        </div>
+        <div class="scroll_area">
+          <div class="conts user_info">
+            <div class="basic_wrap">
+              <p class="cont_title">계정정보</p>
+              <div class="sns_login kakao">
+                카카오로 로그인
+                <div class="btn_tg">
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                  <span>계정연결</span>
+                </div>
+                
+              </div>
+              <div class="sns_login naver mgt10">
+                네이버로 로그인
+                <div class="btn_tg">
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                  <span>연결해제</span>
+                </div>
+              </div>
+
+              <div class="section">
+                <p class="sec_tit">이메일로 로그인</p>
+                <p class="gray_box">111@gmail.com</p>
+              </div>
+
+              <div class="section pw_change" >
+                <p class="sec_tit">비밀번호</p>
+                <button class="btn_small">변경</button>
+              </div>
+              <div class="hide_area hide">
+                <div class="form_type">
+                  <div class="required pw">
+                    <label class="title">비밀번호</label>
+                    <input type="password" placeholder="현재 비밀번호"/>
+                  </div>
+                  <div class="required pw">
+                    <label class="title">비밀번호</label>
+                    <input type="password" placeholder="8~20자의 영문대소문자, 숫자, 특수문자 혼용해서 입력하세요."/>
+                  </div>
+                  <div class="required pw">
+                    <label class="title">비밀번호 재입력</label>
+                    <input type="password" class="fail" placeholder="비밀번호를 다시한번 입력하세요."/>
+                    <p class="form_cmt red">
+                      <span class="tooltip"></span>비밀번호와 재입력한 비밀번호가 맞지 않습니다.
+                    </p>
+                  </div>    
+                </div>
+                <div class="mgt20 al_right">
+                  <button class="btn_small gray">취소</button>
+                  <button class="btn_small">비밀번호변경</button>
+                </div>
+              </div>
+              
+
+              <div class="section terms">
+                <p class="sec_tit">약관동의내역</p>
+                <div class="gray_box">
+                  뉴스레터·이벤트·프로모션 정보 수신 동의
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="redir_area basic_wrap">
+              <a href="#" >회원탈퇴</a>
+            </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ </body>
+<script>
+  $(".pw_change button").on("click",function(){
+    $(".hide_area").removeClass("hide");
+    $(this).parent(".pw_change").addClass("hide")
+  })
+  $(".hide_area button").on("click",function(){
+    $(".hide_area").addClass("hide");
+    $(".pw_change").removeClass("hide");
+  })
+</script>
+</html>
