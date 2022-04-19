@@ -79,6 +79,7 @@ function popup() {
 		var winH = $(window).height();
 		if (popH > winH) {
             $(this).closest('.layer_popup').addClass('h_full');
+			$(this).css({'margin-left': -popW / 2})
         } else {
             $(this).closest('.layer_popup').removeClass('h_full');
 			$(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})
