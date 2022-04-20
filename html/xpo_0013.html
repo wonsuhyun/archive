@@ -30,18 +30,21 @@
                   <label class="title">이메일</label>
                   <input type="text" placeholder="이메일을 입력해주세요" class="fail"/>
                   <p class="form_cmt red">
-                    <span class="tooltip"></span>이메일을 입력해주세요.
+                    <span class="tooltip"></span>유효한 이메일을 입력하세요.
                   </p>
                 </div>
                 <div class="required pw">
                   <label class="title">비밀번호</label>
-                  <input type="password" placeholder="영문대소문자, 숫자, 특수문자혼용 8-20자까지 가능합니다."/>
+                  <input type="password" class="fail" placeholder="영문대소문자, 숫자, 특수문자혼용 8-20자까지 가능합니다."/>
+                  <p class="form_cmt red">
+                    <span class="tooltip"></span>비밀번호 형식을 지켜주세요.
+                  </p>
                 </div>
                 <div class="required pw">
                   <label class="title">비밀번호 재입력</label>
                   <input type="password" class="fail" placeholder="비밀번호를 다시한번 입력하세요."/>
                   <p class="form_cmt red">
-                    <span class="tooltip"></span>비밀번호를 입력해주세요.
+                    <span class="tooltip"></span>비밀번호와 재입력한 비밀번호가 맞지 않습니다.
                   </p>
                 </div>
                 <div class="required">
@@ -55,11 +58,11 @@
                       <input type="checkbox" id="allCheck"/>
                       <label for="allCheck">모두 동의합니다.</label>
                     </div>
-                    <div class="check_item accodian">
+                    <!-- <div class="check_item accodian">
                       <input type="checkbox" id="check1"/>
                       <label for="check1">(필수) 만 14세 이상입니다.</label>
                       <span class="acc_btn display"></span>
-                    </div>
+                    </div> -->
                     <div class="check_item accodian">
                       <input type="checkbox" id="check2"/>
                       <label for="check2">(필수) 이용약관</label>
@@ -240,7 +243,7 @@
                 
               </div>
 
-              <button class="pop_btn mgt40">이메일로 회원가입하기</button>
+              <button class="pop_btn mgt40">가입하기</button>
             </div>
         </div>
         </div>
