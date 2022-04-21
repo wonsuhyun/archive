@@ -1459,7 +1459,13 @@ email_none
 		padding-right: 20px;
 	}
 	.intro .part3 .context_box .tit{
-		font-size: 18px;
+		font-size: 15px;
+	}
+	.intro .part3 .context_box .acc_conts p,
+	.intro .part3 .context_box .acc_conts div,
+	.intro .part3 .context_box .acc_conts table td,
+	.intro .part3 .context_box .acc_conts table th{
+		font-size: 12px;
 	}
 	.intro .part3 .context_box .sub{
 		font-size: 12px;
