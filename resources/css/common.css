@@ -642,7 +642,7 @@ popup
 	text-align: center;
 	font-size: 24px;
 	font-weight: 600;
-	margin-top: 30px;
+	padding-top: 30px;
 }
 .layer_popup  .cont_title.border_b {
 	border-bottom: 1px solid #ededed;
