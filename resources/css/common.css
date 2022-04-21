@@ -265,6 +265,11 @@ input[type=checkbox]:checked + label::after{
 	padding-left: 20px ;
 	padding-right: 20px ;
 }
+.form_type.type1 input[type=text].fail,
+.form_type.type1 input[type=password].fail,
+.form_type.type1 input[type=tel].fail{
+	border-color: #c9242b;
+}
 .form_type.type1 > div {
 	margin-top: 8px;
 }
