@@ -683,9 +683,9 @@ popup
 }
 .layer_popup.h_full .popup{
 	top: 0;
+	height: 100%;
 }
 .layer_popup .scroll_area{
-
 	padding-right: 30px;
 	padding-left: 30px;
 }
