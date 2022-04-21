@@ -57,7 +57,8 @@ $(document).ready(function(){
 
 
 	$('.layer_popup .popup .pop_close').on("click",function(){
-		$(this).parents(".layer_popup").removeClass("on")
+		$(this).parents(".layer_popup").removeClass("on");
+		$("html,body").removeClass("scroll_none");
 	})
 
 	popup();
@@ -86,6 +87,7 @@ function popup() {
             $(this).closest('.layer_popup').removeClass('h_full');
 			$(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})
 		}
+		$("html,body").addClass("scroll_none");
     });
 }
 

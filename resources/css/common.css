@@ -10,6 +10,10 @@
 	margin: 0 auto;
 	width: 100%;
 }
+
+.scroll_none {
+	overflow: hidden;
+}
 @font-face {
 	font-family: noto;
 	font-style: normal;
@@ -1170,6 +1174,7 @@ email_none
 	}
 	.layer_popup .scroll_area {
 		padding: 0 25px;
+		padding-bottom: 170px;
 	}
 	.layer_popup  .pop_header {
 		padding-left: 25px;
