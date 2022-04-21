@@ -1378,6 +1378,7 @@ email_none
 		max-width: none;
 	}
 	.layer_popup .scroll_area {
+		height: calc( 100vh - 87px);
 		padding: 0 25px;
 		padding-bottom: 170px;
 	}
