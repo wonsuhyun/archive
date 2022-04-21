@@ -3,6 +3,7 @@
 .wrapper { 
 	width : 100%; 
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 .container{
@@ -482,7 +483,7 @@ input:checked + .slider:before {
 .btn_type.red {
 	background: #d8191f;
 }
-p.pg_title {
+h1.pg_title {
 	text-align: center;
 	font-size: 36px;
 	font-weight: 600;
@@ -518,6 +519,18 @@ p.pg_title {
 	height: 30px;
 	line-height: 30px;
 	margin-right: 5px;
+}
+.for_m {
+	display: none;
+}
+.for_pc{
+	display: block;
+}
+.swiper {
+	overflow: hidden;
+}
+.swiper_wrap{
+	overflow-x: hidden;
 }
 /*
 =======================================================================
@@ -667,7 +680,7 @@ intro
 .gray_box {
 	background-color: #f6f7f7;
 }
-.intro p.pg_title {
+.intro h1.pg_title {
 	text-align: center;
 	font-size: 36px;
 	font-weight: 600;
@@ -708,6 +721,13 @@ intro
 	color: #000;
 	font-weight:  600;
 }
+.intro .part1 .imgs {
+	max-width: 780px;
+	margin: 15px auto 0 auto;
+}
+.intro .part1 .imgs > div {
+	vertical-align: middle;
+}
 .intro .part2 .keywords{
 	margin-top: 20px;
 	margin-bottom: 45px;
@@ -734,7 +754,13 @@ intro
 	font-weight: 600;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
+	background: url(../img/arrow_red.png) no-repeat center bottom;
 }
+.intro .part2 .gray_box img {
+	max-width: 992px;
+	margin: 50px auto 0 auto;
+}
+
 .intro .part3 .gray_box {
 	padding: 50px 0;
 }
@@ -801,6 +827,30 @@ intro
 .intro .acc_conts table td {
 	background-color: #f7f7f7;
 }
+.intro .swiper_wrap {
+	margin-top: 50px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 68px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.intro .swiper_wrap .swiper-button-prev{
+	top: auto;
+	bottom: 30px;
+	left: calc( 50% - 50px );
+}
+.intro .swiper_wrap .swiper-button-next{
+	top: auto;
+	bottom: 30px;
+	right: calc( 50% - 50px );
+
+}
+.intro .swiper {
+	width: 114%;
+	margin-left: -7%;
+}
+
 /*
 =======================================================================
 login
@@ -1068,12 +1118,33 @@ email_none
 	background: url(../img/bg_txt2.png) no-repeat center / contain;
 	padding: 20px 0;
 	margin: 15px 0 85px 0;
+	position: relative;
+}
+.incruit .cmt::after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	background: url(../img/img_arrow.png) no-repeat center ;
+	position: absolute;
+	bottom: -40px;
+	left: calc( 50% - 15px );
 }
 .incruit .gray_box{
 	padding: 50px 0;
 	max-width: 900px;
 	margin: 0 auto;
+	position: relative;
 }
+.incruit .gray_box::after{
+	content: "";
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	background: url(../img/icon01.png) no-repeat center / contain;
+	top: -27px;
+	left: calc( 50% - 27px );
+}
+
 /*
 =======================================================================
 공지사항
@@ -1111,8 +1182,13 @@ email_none
 .search_top .right .input_wrap > div {
 	border-left: 1px solid #cdcdcd;
 }
+
 .search_top .right .input_wrap > div:first-child{
 	border-left: none
+}
+.search_top .right .input_wrap > div:nth-of-type(1),
+.search_top .right .input_wrap > div:nth-of-type(2){
+	width: 15%;
 }
 .search_top .right .input_wrap input {
 	width: 100%;
@@ -1169,6 +1245,12 @@ email_none
 	}
 }
 @media (max-width: 760px) {
+	.for_m {
+		display: block;
+	}
+	.for_pc{
+		display: none;
+	}
 	.container {
 		padding: 0 20px;
 	}
@@ -1205,9 +1287,10 @@ email_none
 		word-break: keep-all;
 	}
 	.intro .part2 .keywords > span {
-		width: 37%;
+		width: 34%;
 		font-size: 13px;
 	}
+
 	.intro .part2 .keywords > span:nth-of-type(2), 
 	.intro .part2 .keywords > span:nth-of-type(3){
 		margin-left: -23px;
@@ -1241,6 +1324,7 @@ email_none
 	}
 	.intro .part3 .gray_box {
 		padding: 0;
+		background-color: #fff;
 	}
 	.intro .part2 .gray_box .red{
 		font-size: 20px;
@@ -1255,8 +1339,59 @@ email_none
 	.intro .part3 .context_box .sub{
 		font-size: 12px;
 	}
-}
+	.incruit .cmt {
+		font-size: 12px;
+	}
+	.incruit .gray_box{
+		font-size: 12px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.tooltip{
+		width: 15px;
+		height: 15px;
+	}
 
+	.container {
+		padding-bottom: 130px;
+	}
+
+	.layer_popup .scroll_area {
+		padding-bottom: 130px;
+	}
+	.layer_popup .conts {
+		padding-bottom: 0;
+	}
+	.notice_page .table_type span{
+		font-size: 12px;
+	}
+	.notice_page .table_type span:nth-of-type(1){
+		display: none;
+	}
+	.notice_page .table_type span:nth-of-type(4){
+		display: none;
+	}
+	.table_type .flex_type span:nth-of-type(2){
+		width: 70%;
+	}
+	.table_type .accodian .acc_btn {
+		width: 15px;
+		height: 15px;
+	}
+}
+@media (max-width: 600px) {
+	.incruit .cmt {
+		background: none;
+	}
+	.intro .part1 .imgs{
+		display: inline-block;
+		text-align: center;
+	}
+	.intro .part1 .imgs > div {
+		display: inline-block;
+		width: 30%;
+	}
+}
 @media (max-width: 380px) {
 	.layer_popup .conts .cont_sub_tit{
 		font-size: 14px;

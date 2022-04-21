@@ -8,13 +8,13 @@
   <script type="text/javascript" src="../resources/js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="../resources/js/jquery-ui.1.12.1.js"></script>
   <script type="text/javascript" src="../resources/js/common.js"></script>
-  <script type="text/javascript" src="../resources/swiper/dist/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
  <body>
   <div class="wrapper intro">
       <div class="container">
-          <p class="pg_title">회사소개</p>
+          <h1 class="pg_title">회사소개</h1>
           <div class="al_center">
             <button class="on">한국어</button>
             <button>ENGLISH</button>
@@ -51,28 +51,73 @@
           </div>
 
           <section class="part1">
-            <p class="section_title">
+            <h2 class="section_title">
               <span>01</span><br>
               콘텐츠 제휴 파트너
-            </p>
+            </h2>
 
-            <div class="imgs">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="imgs tb type5">
+              <div>
+                <img src="../resources/img/img_naver.png"/>
+              </div>
+              <div>
+                <img src="../resources/img/img_kakao.png"/>
+              </div>
+              <div>
+                <img src="../resources/img/img_google.png"/>
+              </div>
+              <div>
+                <img src="../resources/img/img_msn.png"/>
+              </div>
+              <div>
+                <img src="../resources/img/img_zum.png"/>
+              </div>
             </div>
 
             <!-- swiper 영역-->
+
+            <div class="swiper_wrap">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample01.png" width="100%"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample02.png" width="100%"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample03.png" width="100%"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample04.png" width="100%"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample01.png" width="100%"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample01.png" width="100%"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample02.png" width="100%"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample03.png" width="100%"/>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
             <div>
 
             </div>
           </section>
           <section class="al_center part2">
-            <p class="section_title">
+            <h2 class="section_title">
               <span>02</span><br>
               사업영역
-            </p>
+            </h2>
             <div>
               <div class="keywords">
                 <span>콘텐츠</span>
@@ -98,27 +143,23 @@
                   아래 담당자에게 문의 주시면 검토 후 빠르게 회신해 드리겠습니다.       
                 </div>
 
-                <img src="">
+                <img src="../resources/img/img_intro.png" class="mgt50" width="100%" height="auto" alt="사업분야에 관련된 이미지">
 
               </div>
             </div>
           </section>
          
           <section class="part3">
-            <p class="section_title">
+            <h2 class="section_title">
               <span>03</span><br>
               제휴 · 광고 · 사진구입 문의 
-            </p>
+            </h2>
             <div class="al_center info">
               이호준 이사 : hojoon@xportsnews.com    전화문의 : 02-3448-5940
             </div>
             <div class="gray_box"> 
                 <div class="context_box">
-                  <p class="tit">문의하기</p>
-                  <p class="sub">
-                    <span class="tooltip"></span>
-                    대표이메일은 회원가입 후 ‘계정정보’에서 변경 가능합니다.
-                  </p>
+                  <p class="tit mgb50">문의하기</p>
                   <div class="form_type">
                     <div class="required">
                       <label class="title">이름</label>
@@ -184,15 +225,13 @@
                     </div>
                   </div>
                 </div>
-
-
             </div>
           </section>
           <section>
-            <p class="section_title">
+            <h2 class="section_title">
               <span>04</span><br>
               찾아오시는 길
-            </p>
+            </h2>
             <p class="al_center mgt20 mgb20">
               주소 : 서울시 강남구 테헤란로 8길 11-4(역삼동) 신도빌딩 7층 (135-933) 엑스포츠미디어<br>
               Tel: 02-3448-5940-1    Fax: 02-3448-5942  
@@ -205,4 +244,22 @@
       </div>
   </div>
  </body>
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop:true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 7,
+          }
+        }
+      });
+ </script>
 </html>
