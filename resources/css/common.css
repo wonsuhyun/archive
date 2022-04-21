@@ -508,7 +508,6 @@ h1.pg_title {
 	border: 1px solid #e3e3e3;
 	margin-left: 5px;
 }
-
 .pagenation ul li{
 	display: inline-block;
 	float: left;
@@ -519,6 +518,24 @@ h1.pg_title {
 	height: 30px;
 	line-height: 30px;
 	margin-right: 5px;
+}
+.pagenation ul li.on a{
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+	font-weight: 900;
+}
+.pagenation .first{
+	background: url(../img/ico_first.png) no-repeat center;
+}
+.pagenation .prev{
+	background: url(../img/ico_prev.png)no-repeat center;
+}
+.pagenation .next{
+	background: url(../img/ico_next.png)no-repeat center;
+}
+.pagenation .last{
+	background: url(../img/ico_last.png)no-repeat center;
 }
 .for_m {
 	display: none;
@@ -531,6 +548,27 @@ h1.pg_title {
 }
 .swiper_wrap{
 	overflow-x: hidden;
+}
+.datepicker_wrap {
+	position: relative;
+	padding-right: 30px;
+}
+.datepicker_wrap::after {
+	content: "";
+	width: 17px;
+	height: 15px;
+	background: url(../img/icon_datepicker.png) no-repeat center / contain;
+	position: absolute;
+	top: calc( 50% - 7px );
+	right: 10px;
+}
+.intro .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	background: url(../img/arr_prev.png) no-repeat center / contain;
+	width: 20px;
+}
+.intro  .swiper-button-next{
+	background: url(../img/arr_next.png) no-repeat center / contain;
+	width: 20px;
 }
 /*
 =======================================================================
@@ -686,6 +724,9 @@ intro
 	font-weight: 600;
 	padding-top: 50px;
 }
+.intro .gray_box span {
+	vertical-align: middle;
+}
 .intro .intro_cmt {
 	font-size: 32px;
 	text-align: center;
@@ -693,7 +734,19 @@ intro
 	padding: 20px 70px;
 	margin: 25px 0 50px 0;
 }
-
+.intro .lang button.on span{
+	border-bottom: 1px solid #969696;
+}
+.intro .lang button{
+	padding-left: 40px;
+	background: url(../img/lang_ko.png) no-repeat 10% center;
+}
+.intro .lang button:nth-of-type(2){
+	background: url(../img/lang_eng.png) no-repeat 10% center;
+}
+.intro .lang button:nth-of-type(3){
+	background: url(../img/lang_jp.png) no-repeat 10% center;
+}
 .intro > .gray_box {
 	padding: 50px 0;
 } 
@@ -838,17 +891,16 @@ intro
 .intro .swiper_wrap .swiper-button-prev{
 	top: auto;
 	bottom: 30px;
-	left: calc( 50% - 50px );
+	left: calc( 50% - 40px );
 }
 .intro .swiper_wrap .swiper-button-next{
 	top: auto;
 	bottom: 30px;
-	right: calc( 50% - 50px );
+	right: calc( 50% - 40px );
 
 }
 .intro .swiper {
 	width: 114%;
-	margin-left: -7%;
 }
 
 /*
@@ -1144,7 +1196,13 @@ email_none
 	top: -27px;
 	left: calc( 50% - 27px );
 }
-
+.incruit .img_wrap {
+	width: 100%;
+	overflow: hidden;
+}
+.incruit .img_wrap img {
+	min-width: 760px;
+}
 /*
 =======================================================================
 공지사항
@@ -1178,6 +1236,15 @@ email_none
 	border-radius: 50px;
 	overflow: hidden;
 	width: 100%;
+	position: relative;
+}
+.search_top .right .input_wrap button.search {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	width: 27px;
+	height:30px;
+	background: url(../img/btn_search.png) no-repeat center;
 }
 .search_top .right .input_wrap > div {
 	border-left: 1px solid #cdcdcd;
@@ -1192,6 +1259,8 @@ email_none
 }
 .search_top .right .input_wrap input {
 	width: 100%;
+	padding-left: 15px;
+	padding-right: 0;
 }
 .table_type{
 	border-top: 1px solid #000;
@@ -1227,6 +1296,8 @@ email_none
 
 }
 .table_type  .accodian .acc_btn {
+	padding-top: 5px;
+	transform: rotateX(180deg);
 	background: url(../img/acc_off2.png) no-repeat center / contain;
 }
 .table_type  .accodian .acc_btn.on {
@@ -1239,12 +1310,26 @@ email_none
 	border:none;
 	border-bottom: 1px solid #e3e3e3
 }
+.layer_popup .terms .cont_title{
+	margin-bottom: 30px;
+}
 @media (max-width: 1000px) {
 	.container {
 		padding: 0 30px;
 	}
 }
 @media (max-width: 760px) {
+	
+	.search_top .right .input_wrap input {
+		font-size: 13px;
+	}
+	.table_type .flex_type{
+		padding: 20px 0;
+	}
+	.table_type .accodian .acc_conts{
+		font-size: 12px;
+		padding: 30px 20px;
+	}
 	.for_m {
 		display: block;
 	}
@@ -1378,8 +1463,22 @@ email_none
 		width: 15px;
 		height: 15px;
 	}
+	.search_top .left {
+		width: 100%;
+		margin-bottom: 10px;
+	} 
+	.search_top .left select{
+		width: 100%;
+		border-radius: 50px;
+	}
+	.search_top .right {
+		width: 100%;
+	} 
 }
 @media (max-width: 600px) {
+	.incruit .img_wrap img {
+		margin-left: -100px;
+	}
 	.incruit .cmt {
 		background: none;
 	}
@@ -1393,6 +1492,9 @@ email_none
 	}
 }
 @media (max-width: 380px) {
+	.incruit .img_wrap img {
+		margin-left: -150px;
+	}
 	.layer_popup .conts .cont_sub_tit{
 		font-size: 14px;
 	}

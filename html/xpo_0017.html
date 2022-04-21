@@ -15,14 +15,14 @@
   <div class="wrapper intro">
       <div class="container">
           <h1 class="pg_title">회사소개</h1>
-          <div class="al_center">
-            <button class="on">한국어</button>
-            <button>ENGLISH</button>
-            <button>日本語</button>
+          <div class="al_center lang mgt20">
+            <button class="on"><span>한국어</span></button>
+            <button><span>ENGLISH</span></button>
+            <button><span>日本語</span></button>
           </div>
 
           <div class="intro_cmt">
-            Korea No.1  Entertainment and Sports News
+            <strong>Korea No.1</strong>  Entertainment and Sports News
           </div>
 
           <div class="gray_box al_center top_box">
@@ -30,27 +30,27 @@
             </p>
             <p>
               엑포츠미디어는 2007년 창간한 대한민국 No. 1 연예, 스포츠 매체 엑스포츠뉴스를 시작으로 <br>
-              연예, 자동차, e스포츠&게임, 패션뷰티, 라이프스타일 분야 등으로 콘텐츠 영역을 확장하며 꾸준히 성장하고 있습니다.<br><br>
-              2018년에는 경제 전문 매체 <span></span>를 발간, 온라인 종합 미디어 기업으로 발돋움하고 있습니다.
+              e스포츠&게임, 패션뷰티, 라이프스타일 분야 등으로 콘텐츠 영역을 확장하며 꾸준히 성장하고 있습니다.<br><br>
+              2018년에는 경제 전문 매체 <span><img src="../resources/img/logo_smart.png"/></span> 를 발간, 온라인 종합 미디어 기업으로 발돋움하고 있습니다.
             </p>
           </div>
 
           <div class="redir_tab tb type4">
               <div class="on"> 
-                <a href="#" >콘텐츠 제휴 파트너</a>
+                <a href="#part1" >콘텐츠 제휴 파트너</a>
               </div>
               <div>
-                <a href="#">사업영역</a>
+                <a href="#part2">사업영역</a>
               </div>
               <div>
-                <a href="#">제휴·광고·사진구입 문의 </a>
+                <a href="#part3">제휴·광고·사진구입 문의 </a>
               </div>
               <div>
-                <a href="#">찾아오시는 길</a>
+                <a href="#part4">찾아오시는 길</a>
               </div>
           </div>
 
-          <section class="part1">
+          <section class="part1" id="part1">
             <h2 class="section_title">
               <span>01</span><br>
               콘텐츠 제휴 파트너
@@ -113,7 +113,7 @@
 
             </div>
           </section>
-          <section class="al_center part2">
+          <section class="al_center part2" id="part2">
             <h2 class="section_title">
               <span>02</span><br>
               사업영역
@@ -149,7 +149,7 @@
             </div>
           </section>
          
-          <section class="part3">
+          <section class="part3" id="part3">
             <h2 class="section_title">
               <span>03</span><br>
               제휴 · 광고 · 사진구입 문의 
@@ -169,7 +169,7 @@
                       <label class="title">이메일</label>
                       <input type="text" placeholder="이름을 입력해주세요"/>
                     </div>
-                    <div class="required">
+                    <div class="">
                       <label class="title">전화번호</label>
                       <input type="text" placeholder="이름을 입력해주세요"/>
                     </div>
@@ -227,7 +227,7 @@
                 </div>
             </div>
           </section>
-          <section>
+          <section id="part4">
             <h2 class="section_title">
               <span>04</span><br>
               찾아오시는 길
@@ -257,7 +257,7 @@
         breakpoints: {
           // when window width is >= 640px
           640: {
-            slidesPerView: 7,
+            slidesPerView: 8,
           }
         }
       });

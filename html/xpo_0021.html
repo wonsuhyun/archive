@@ -15,8 +15,6 @@
   <div class="wrapper notice_page">
       <div class="container">
           <h1 class="pg_title">공지사항</h1>
-
-          
           <div class="mgt70 search_top">
             <div class="left">
               <div class="for_pc">
@@ -35,14 +33,15 @@
             </div>
             <div class="right">
               <div class="input_wrap tb type3">
-                <div>
-                  <input readonly type="text" class="datepicker"/>
+                <div class="datepicker_wrap">
+                  <input readonly type="text" class="datepicker" value="2020.12.12"/>
                 </div>
-                <div>
-                  <input readonly type="text" class="datepicker"/>
+                <div class="datepicker_wrap">
+                  <input readonly type="text" class="datepicker" value="2020.12.13"/>
                 </div>
                 <div>
                   <input type="text" placeholder="검색어를 입력하세요."/>
+                  <button class="search"></button>
                 </div>
               </div>
             </div>
@@ -151,8 +150,8 @@
             </li>
           </ul>
           <div class="pagenation">
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#" class="first"></a>
+            <a href="#" class="prev"></a>
             <ul>
               <li class="on">
                 <a href="#">1</a>
@@ -170,16 +169,9 @@
                 <a href="#">5</a>
               </li>
             </ul>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#" class="next"></a>
+            <a href="#" class="last"></a>
           </div>
-          
-          
-          
-         
-
-            
-          
       </div>
   </div>
  </body>
