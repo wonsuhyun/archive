@@ -625,7 +625,7 @@ popup
 	top: 0;
 }
 .layer_popup .scroll_area{
-	max-height: calc( 100vh - 87px);
+	height: calc( 100vh - 87px);
 	overflow-y: auto;
 	padding-right: 30px;
 	padding-left: 30px;
@@ -954,6 +954,7 @@ email_none
 .join_step  .acc_conts {
 	max-height: 110px;
 	overflow-y: auto;
+	font-size: 12px;
 }
 /*
 =======================================================================
