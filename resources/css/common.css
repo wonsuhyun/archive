@@ -1353,6 +1353,10 @@ email_none
 	}
 }
 @media (max-width: 760px) {
+
+	h1.pg_title{
+		font-size: 30px;
+	}
 	
 	.search_top .right .input_wrap input {
 		font-size: 13px;
