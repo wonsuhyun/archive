@@ -1289,7 +1289,7 @@ email_none
 }
 .search_top .right .input_wrap > div:nth-of-type(1),
 .search_top .right .input_wrap > div:nth-of-type(2){
-	width: 15%;
+	width: 18%;
 }
 .search_top .right .input_wrap input {
 	width: 100%;
@@ -1525,6 +1525,23 @@ email_none
 	.intro .part1 .imgs > div {
 		display: inline-block;
 		width: 30%;
+	}
+	.datepicker_wrap {
+		padding-right: 20px;
+	}
+	.datepicker_wrap::after{
+		right: 5px;
+	}
+	.search_top .right .input_wrap input{
+		padding-left: 10px;
+		font-size: 12px;
+	}
+	.search_top .right .input_wrap button.search{
+		width: 15px;
+		background: url(../img/btn_search.png) no-repeat center / contain;
+	}
+	.search_top .right .input_wrap > div:nth-of-type(1), .search_top .right .input_wrap > div:nth-of-type(2){
+		width: 22%;
 	}
 }
 @media (max-width: 380px) {
