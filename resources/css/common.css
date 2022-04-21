@@ -685,7 +685,7 @@ popup
 	top: 0;
 }
 .layer_popup .scroll_area{
-	height: calc( 100vh - 87px);
+	max-height: calc( 100vh - 87px);
 	overflow-y: auto;
 	padding-right: 30px;
 	padding-left: 30px;
@@ -1094,9 +1094,15 @@ email_none
 	top: 12px;
 	font-size: 13px;
 	font-weight: 200;
-	color: #000;
+	
 }
-.user_info .sns_login .btn_tg > span{
+.user_info .btn_tg {
+
+}
+.user_info .btn_tg > span{
+	color: #000;
+	font-size: 13px;
+	font-weight: 200;
 	line-height: 20px;
 	display: inline-block;
 	margin-left: 5px;
@@ -1145,10 +1151,34 @@ email_none
 	padding-right: 15px;
 	background: url(../img/arrow.png) no-repeat right center;
 }
-
+.user_info.user_info2 .sns_login{
+	padding-left: 47px;
+}
+.user_info.user_info2 .sns_login > span{
+	font-weight:200 ;
+}
+.user_info.user_info2 .section.bor{
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 10px;
+}
+.user_info.user_info2 .pw_info {
+	overflow: hidden;
+	margin-top: 15px;
+}
+.user_info.user_info2 .pw_info > span {
+	font-size: 13px;
+	font-weight: 200;
+	color: #ababab;
+}
+.user_info.user_info2 .pw_info .btn_tg{
+	float: right;
+}
 .pw_change_noti .cont_sub_tit {
 	border-bottom: 1px solid #ededed;
 	padding-bottom: 40px;
+}
+.user_info  .email2 .sec_tit {
+	margin-top: 20px
 }
 /*
 =======================================================================

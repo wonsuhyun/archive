@@ -49,15 +49,38 @@
                 </div>
               </div>
 
-              <div class="section">
+              <div class="section ">
                 <p class="sec_tit">이메일 로그인</p>
                 <p class="gray_box">111@gmail.com</p>
               </div>
 
-              <div class="section pw_change" >
-                <p class="sec_tit">비밀번호</p>
-                <button class="btn_small">변경</button>
+              <div class="hide_area">
+                <div class="form_type">
+                  <div class="required pw">
+                    <label class="title">현재비밀번호</label>
+                    <input type="password" placeholder="현재 비밀번호"/>
+                  </div>
+                  <div class="required pw">
+                    <label class="title">변경할 비밀번호 </label>
+                    <input type="password" class="fail" placeholder="영문대소문자, 숫자, 특수문자혼용 8-20자까지 가능합니다."/>
+                    <p class="form_cmt red">
+                      <span class="tooltip"></span>비밀번호 형식을 지켜주세요.
+                    </p>
+                  </div>
+                  <div class="required pw">
+                    <label class="title">비밀번호 재입력</label>
+                    <input type="password" class="fail" placeholder="비밀번호를 다시한번 입력하세요."/>
+                    <p class="form_cmt red">
+                      <span class="tooltip"></span>비밀번호와 재입력한 비밀번호가 맞지 않습니다.
+                    </p>
+                  </div>    
+                </div>
+                <div class="mgt20 al_right">
+                  <button class="btn_small gray">취소</button>
+                  <button class="btn_small">비밀번호변경</button>
+                </div>
               </div>
+              
 
               <div class="section terms">
                 <p class="sec_tit">약관동의내역</p>
