@@ -1045,32 +1045,36 @@ email_none
 }
 
 
-.join_step .term {
+.join_step .term,
+.user_info .term{
 	font-size: 14px;
 	font-weight: 200;
 	border-top: 1px solid #000;
 	padding-top: 20px;	
 }
-.join_step .all_check {
+.join_step .all_check,
+.user_info .all_check{
 	margin-bottom: 25px;
 	border-top: 1px solid #000;
 	padding-top: 15px;
 }
-.join_step .check_item {
+.join_step .check_item,
+.user_info .check_item{
 	position: relative;
 	margin-bottom: 12px;
 	font-size: 14px;
 }
-
-.email_send .btm_wrap{
-	margin-top: 45px;
-}
-
-.join_step  .acc_conts {
+.join_step  .acc_conts,
+.user_info .acc_conts{
 	max-height: 110px;
 	overflow-y: auto;
 	font-size: 12px;
 }
+.email_send .btm_wrap{
+	margin-top: 45px;
+}
+
+
 /*
 =======================================================================
 계정정보
@@ -1516,9 +1520,10 @@ email_none
 	.search_top .left .select_wrap{
 		border: 1px solid #d2d2d2;
 		border-radius: 50px;
+		padding-right: 20px;
 	}
 	.search_top .left select{
-		width: 90%;
+		width: 100%;
 		border: none;
 	}
 	.search_top .right {
