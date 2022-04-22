@@ -1520,7 +1520,7 @@ email_none
 	.search_top .left .select_wrap{
 		border: 1px solid #d2d2d2;
 		border-radius: 50px;
-		padding-right: 20px;
+		padding-right: 10px;
 	}
 	.search_top .left select{
 		width: 100%;
