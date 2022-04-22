@@ -72,7 +72,7 @@ function scrollEvent(){
 
 //리사이즈 이벤트
 function resizeWindow(){
-	popup()
+	//popup()
 }
 
 function popup() {
