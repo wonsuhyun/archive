@@ -690,7 +690,7 @@ popup
 	padding-right: 30px;
 	padding-left: 30px;
 }
-.layer_popup .h_full .scroll_area {
+.layer_popup.h_full .scroll_area {
 	height: calc( 100vh - 87px);
 	overflow-y: auto;
 }
