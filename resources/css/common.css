@@ -1512,10 +1512,14 @@ email_none
 	.search_top .left {
 		width: 100%;
 		margin-bottom: 10px;
-	} 
-	.search_top .left select{
-		width: 100%;
+	}
+	.search_top .left .select_wrap{
+		border: 1px solid #d2d2d2;
 		border-radius: 50px;
+	}
+	.search_top .left select{
+		width: 90%;
+		border: none;
 	}
 	.search_top .right {
 		width: 100%;
