@@ -484,7 +484,7 @@ input:checked + .slider:before {
 .btn_type.red {
 	background: #d8191f;
 }
-h1.pg_title {
+.pg_title {
 	text-align: center;
 	font-size: 36px;
 	font-weight: 600;
@@ -722,7 +722,7 @@ intro
 .gray_box {
 	background-color: #f6f7f7;
 }
-.intro h1.pg_title {
+.intro .pg_title {
 	text-align: center;
 	font-size: 36px;
 	font-weight: 600;
