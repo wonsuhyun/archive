@@ -597,6 +597,7 @@ popup
 	display: block;
 }
 .layer_popup .popup {
+	max-height: ;
 	position: absolute;
 	width: 100%;
 	max-width: 480px;
@@ -622,14 +623,6 @@ popup
 	cursor: pointer;
 }
 
-.layer_popup .popup.full_pop {
-	height: 100vh;
-	width: 100vw;
-}
-.layer_popup .scroll_pop .cont_area {
-	max-height: calc( 100vh - 40px );
-	overflow-y: auto;
-}
 .layer_popup  .pop_header {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -683,16 +676,15 @@ popup
 	padding: 0 60px;
 }
 .layer_popup.h_full .popup{
-	top: 0;
-	height: 100%;
+	top: 10px;
+	height: calc( 100vh - 20px);
+	overflow-y: auto;
 }
 .layer_popup .scroll_area{
 	padding-right: 30px;
 	padding-left: 30px;
 }
 .layer_popup.h_full .scroll_area {
-	height: calc( 100vh - 87px);
-	overflow-y: auto;
 }
 .layer_popup .btm_box {
 	padding-top: 15px;
@@ -1402,12 +1394,20 @@ email_none
 	.layer_popup .popup {
 		height: 100vh;
 		width: 100vw;
+		overflow-y: auto;
+		max-width: none;
+		top: 0;
+		left: 0;
+	}
+	.layer_popup.h_full .popup {
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		overflow-y: auto;
 		max-width: none;
 	}
 	.layer_popup .scroll_area {
-		height: calc( 100vh - 87px);
 		padding: 0 25px;
-		overflow-y: auto;
 		padding-bottom: 170px;
 	}
 	.layer_popup  .pop_header {

@@ -72,21 +72,28 @@ function scrollEvent(){
 
 //리사이즈 이벤트
 function resizeWindow(){
-	//popup()
+	popup()
 }
 
 function popup() {
     $('.layer_popup .popup').each(function() {
-        var popW = $(this).outerWidth();
+		var popW = $(this).outerWidth();
 		var popH = $(this)[0].scrollHeight;
 		var winH = $(window).height();
-		if (popH > winH) {
-            $(this).closest('.layer_popup').addClass('h_full');
-			$(this).css({'margin-left': -popW / 2})
-        } else {
-            $(this).closest('.layer_popup').removeClass('h_full');
-			$(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})
+		var winW = $(window).outerWidth();
+
+		if (winW > 760){
+			if (popH > winH ) {
+				$(this).closest('.layer_popup').addClass('h_full');
+				$(this).css({'margin-left': -popW / 2, 'margin-top': '0'});
+			} else {
+				$(this).closest('.layer_popup').removeClass('h_full');
+				$(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})
+			}
+		} else {
+			$(this).css({'margin-left': 0, 'margin-top': 0});
 		}
+		
 		$("html,body").addClass("scroll_none");
     });
 }
