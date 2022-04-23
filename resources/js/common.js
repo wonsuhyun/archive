@@ -81,7 +81,7 @@ function popup() {
 		var popH = $(this)[0].scrollHeight;
 		var winH = $(window).height();
 		var winW = $(window).outerWidth();
-
+		console.log(popH);
 		if (winW > 760){
 			if (popH > winH ) {
 				$(this).closest('.layer_popup').addClass('h_full');
@@ -93,7 +93,6 @@ function popup() {
 		} else {
 			$(this).css({'margin-left': 0, 'margin-top': 0});
 		}
-		
 		$("html,body").addClass("scroll_none");
     });
 }

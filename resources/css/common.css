@@ -178,6 +178,7 @@ input[type=checkbox] {
 input[type=checkbox] + label {
 	padding-left: 30px;
 	position: relative;
+	display: inline-block
 }
 input[type=checkbox] + label::after{
 	content: "";
@@ -334,6 +335,9 @@ input[type=checkbox]:checked + label::after{
 }
 .accodian{
 	position: relative;
+}
+.accodian label {
+	padding-right: 30px;
 }
 .accodian .acc_btn {
 	position: absolute;
@@ -858,6 +862,9 @@ intro
 	border-top: 1px solid #000;
 	
 }
+.intro .part4 {
+	padding-bottom: 40px;
+}
 .intro .acc_conts table {
 	margin-top: 10px;
 }
@@ -898,7 +905,12 @@ intro
 .intro .swiper {
 	width: 114%;
 }
-
+.intro.jp .redir_tab a{
+	font-size: 18px;
+}
+.intro.jp .part2 .keywords > span{
+	font-size: 16px;
+}
 /*
 =======================================================================
 login
@@ -1361,21 +1373,30 @@ email_none
 .layer_popup .terms .cont_title{
 	margin-bottom: 30px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 	.container {
 		padding: 0 30px;
 	}
-
+	
 	.layer_popup .scroll_area {
 		padding-bottom: 170px;
 	}
+	.intro .top_box{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 @media (max-width: 760px) {
+	.intro.jp p, .intro.jp div{
+		word-break: break-all;
+	}
 
 	h1.pg_title{
 		font-size: 30px;
 	}
-	
+	.intro.jp .redir_tab a {
+		font-size: 14px;
+	}
 	.search_top .right .input_wrap input {
 		font-size: 13px;
 	}
@@ -1587,6 +1608,11 @@ email_none
 	}
 	.search_top .right .input_wrap > div:nth-of-type(1), .search_top .right .input_wrap > div:nth-of-type(2){
 		width: 22%;
+	}
+
+	.intro.jp .part2 .keywords > span{
+		font-size: 10px;
+		width: 34%;
 	}
 }
 @media (max-width: 380px) {
