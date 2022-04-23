@@ -1365,6 +1365,10 @@ email_none
 	.container {
 		padding: 0 30px;
 	}
+
+	.layer_popup .scroll_area {
+		padding-bottom: 170px;
+	}
 }
 @media (max-width: 760px) {
 
