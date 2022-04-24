@@ -26,7 +26,7 @@
               </div>
 
               <div class="select_wrap for_m">
-                <select class="">
+                <select>
                   <option>전체</option>
                   <option>채용</option>
                   <option>알림</option>
@@ -178,5 +178,17 @@
           </div>
       </div>
   </div>
+  <script>
+    $(".search_top .left button").on("click",function(){
+      $(".search_top .left button").removeClass('on');
+      $(this).addClass("on");
+      $(this).parents(".for_pc").siblings(".for_m").find("select option").eq($(this).index()).prop("selected",true);
+    });
+
+    $(".search_top select").on("change", function(){
+      $(".search_top .left button").removeClass('on');
+      $(".search_top .left button").eq($(this).find("option:selected").index()).addClass("on")
+    })
+  </script>
  </body>
 </html>
