@@ -596,6 +596,59 @@ input:checked + .slider:before {
 	width: 100%;
 	padding-top: 75%;
 }
+.img_list li {
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: table;
+}
+.img_list li > div{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 20px;
+}
+.img_list li > div.img_div {
+	overflow: hidden;
+	width: 160px;
+	padding-left: 0;
+}
+.img_list li > div.img_div > div{
+	float: left;
+}
+.img_list li.point > div:nth-of-type(1){
+	padding-right: 20px;
+}
+.img_list li.point > div:nth-of-type(2) {
+	padding-left: 0;
+	border-top: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+}
+.img_list.type3 li {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	font-size: 18px;
+}
+.img_list.type3 li > div {
+	display: inline-block;
+	width: 100%;
+}
+.img_list.type3 {
+	overflow: hidden;
+}
+.img_list.type3.part5 li {
+	width: calc( 16% - 36px );
+	margin-right: 50px;
+	font-size: 16px;
+	font-weight: 200;
+}
+.img_list.type3.part3 li {
+	width: calc( 33.33% - 27px );
+	margin-right: 40px;
+}
+.img_list.type3 li:last-child{
+	margin-right: 0;
+}
 /*
 =======================================================================
 popup
@@ -622,7 +675,6 @@ popup
 	display: block;
 }
 .layer_popup .popup {
-	max-height: ;
 	position: absolute;
 	width: 100%;
 	max-width: 480px;
@@ -1408,7 +1460,8 @@ email_none
 */
 .main .main_part1{
 	display: table;
-    width: 100%;
+	width: 100%;
+	margin-bottom: 60px;
 }
 .main .main_part1 > div {
 	display: table-cell;
@@ -1436,6 +1489,9 @@ email_none
 .main .main_part1 .txt_list li {
 	font-size: 18px;
 }
+.main .main_part2{
+	margin-bottom: 30px;
+}
 .main .main_part2 .tb > div:first-child {
 	padding-right: 30px;
 }
@@ -1445,6 +1501,7 @@ email_none
 .main .main_tit {
 	font-size: 28px;
 	font-weight: 900;
+	margin-bottom: 25px;
 }
 .main  .bor {
 	padding-top: 50px;
@@ -1459,6 +1516,10 @@ email_none
 }
 .main .tb > div {
 	text-align: left;
+	vertical-align: top;
+}
+.main .main_part4 {
+	margin-bottom: 45px;
 }
 .main .main_part4 .tb > div:first-child {
 	padding-right: 30px;
@@ -1466,41 +1527,30 @@ email_none
 .main .main_part4 .tb > div:last-child {
 	padding-left: 30px;
 }
-.img_list li {
-	font-size: 20px;
-	margin-bottom: 10px;
-	display: table;
+.main .main_part4 .pt2 .img_list{
+	margin-bottom: 40px;
 }
-.img_list li > div{
-	display: table-cell;
-	vertical-align: top;
-	text-align: left;
-	padding-left: 20px;
+.main .main_part4 .pt2 .img_list li.point > div.img_div {
+	width: 32%;
 }
-.img_list li > div.img_div {
-	width: 160px;
-	padding-left: 0;
+.main .main_part5 .tb > div {
+	position: relative;
+	padding-bottom: 55px;
 }
-.img_list.type3 li {
-	display: inline-block;
-	width: 100%;
+.main .main_part5 .tb > div::after{
+	content: "";
+	height: 2px;
+	width: calc( 100% - 30px );
+	background-color: #c9242b;
+	position: absolute;
+	left: 0;
+	bottom:0;
 }
-.img_list.type3 li > div {
-	display: inline-block;
-	width: 100%;
+.main .main_part5 .tb > div:last-child::after{
+	left:auto;
+	right: 0;
 }
-.img_list.type3 {
-	overflow: hidden;
-}
-.img_list.type3 li {
-	float: left;
-	width: calc( 16% - 36px );
-	margin-right: 50px;
-	font-size: 18px;
-}
-.img_list.type3 li:last-child{
-	margin-right: 0;
-}
+
 @media (max-width: 1100px) {
 	.container {
 		padding: 0 30px;
@@ -1512,6 +1562,13 @@ email_none
 	.intro .top_box{
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	.intro .part3 .context_box .acc_conts p,
+	.intro .part3 .context_box .acc_conts div,
+	.intro .part3 .context_box .acc_conts table td,
+	.intro .part3 .context_box .acc_conts table th{
+		font-size: 12px;
 	}
 }
 @media (max-width: 760px) {
@@ -1636,12 +1693,7 @@ email_none
 	.intro .part3 .context_box .tit{
 		font-size: 15px;
 	}
-	.intro .part3 .context_box .acc_conts p,
-	.intro .part3 .context_box .acc_conts div,
-	.intro .part3 .context_box .acc_conts table td,
-	.intro .part3 .context_box .acc_conts table th{
-		font-size: 12px;
-	}
+
 	.intro .part3 .context_box .sub{
 		font-size: 12px;
 	}
