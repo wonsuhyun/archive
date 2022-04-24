@@ -74,17 +74,39 @@
               </div>
             </div>
 
+            <div class="for_pc photo">
+              <div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample07.png" width="100%" height="auto"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample01.png" width="100%" height="auto"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample02.png" width="100%" height="auto"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample03.png" width="100%" height="auto"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample04.png" width="100%" height="auto"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample08.png" width="100%" height="auto"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample09.png" width="100%" height="auto"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../resources/img/sample10.png" width="100%" height="auto"/>
+                </div>
+              </div>
+            </div>
+            
             <!-- swiper 영역-->
-
-            <div class="swiper_wrap">
+            <div class="swiper_wrap for_m">
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="../resources/img/sample01.png" width="100%" height="auto"/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../resources/img/sample02.png" width="100%" height="auto"/>
-                  </div>
                   <div class="swiper-slide">
                     <img src="../resources/img/sample03.png" width="100%" height="auto"/>
                   </div>
@@ -92,7 +114,16 @@
                     <img src="../resources/img/sample04.png" width="100%" height="auto"/>
                   </div>
                   <div class="swiper-slide">
-                    <img src="../resources/img/sample01.png" width="100%" height="auto"/>
+                    <img src="../resources/img/sample08.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample09.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample10.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample07.png" width="100%" height="auto"/>
                   </div>
                   <div class="swiper-slide">
                     <img src="../resources/img/sample01.png" width="100%" height="auto"/>
@@ -100,12 +131,7 @@
                   <div class="swiper-slide">
                     <img src="../resources/img/sample02.png" width="100%" height="auto"/>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="../resources/img/sample03.png" width="100%" height="auto"/>
-                  </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
               </div>
             </div>
 
@@ -243,21 +269,32 @@
   </div>
  </body>
  <script>
-   var swiper = new Swiper(".mySwiper", {
+  var swiper ;
+  $( window ).resize( function() {
+    var winW = $(window).outerWidth();
+    if (winW <= 760){
+      init();
+    }else{
+      swiper.destroy();
+      swiper = null;
+    }
+  });
+
+  init ();
+
+  function init (){
+    if ($(".mySwiper").is(":visible") && !swiper ){
+      swiper = new Swiper(".mySwiper", {
         slidesPerView: 5,
         spaceBetween: 10,
-        centeredSlides: true,
         loop:true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 8,
-          }
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
         }
       });
+    }
+  }
+
  </script>
 </html>

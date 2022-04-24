@@ -4,6 +4,7 @@
 	width : 100%; 
 	min-height: 100vh;
 	overflow-x: hidden;
+	background-color: #fff;
 }
 
 .container{
@@ -560,13 +561,31 @@ input:checked + .slider:before {
 	top: calc( 50% - 7px );
 	right: 10px;
 }
-.intro .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.intro .swiper-button-prev{
 	background: url(../img/arr_prev.png) no-repeat center / contain;
 	width: 20px;
 }
 .intro  .swiper-button-next{
 	background: url(../img/arr_next.png) no-repeat center / contain;
 	width: 20px;
+}
+.intro .photo{
+	width: 100%;
+	overflow: hidden;
+}
+.intro .photo > div {
+	overflow: hidden;
+	width: 114%;
+	margin-left: -7%;
+}
+.intro .photo > div .swiper-slide{
+	width: calc( 12.5% - 8.8px );
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+.intro .photo > div .swiper-slide:last-child{
+	margin-right: 0;
 }
 .img{
 	overflow: hidden;
@@ -981,6 +1000,7 @@ intro
 }
 .intro .swiper {
 	width: 114%;
+	margin-left: -7%;
 }
 .intro.jp .redir_tab a{
 	font-size: 18px;
@@ -1760,6 +1780,7 @@ footer .footer2 .info {
 		width: 100vw;
 		overflow-y: auto;
 		max-width: none;
+		background-color: #fff;
 		top: 0;
 		left: 0;
 	}
