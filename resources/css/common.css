@@ -190,14 +190,7 @@ input[type=checkbox] + label::after{
 	top: 0;
 }
 input[type=checkbox]:checked + label::after{
-	content: "";
-	width: 20px;
-	height: 20px;
-	border: 1px solid #cdcdcd;
-	background-color: #c9242b;
-	position: absolute;
-	left: 0;
-	top: 0;
+	background:url(../img/checkbos.png) no-repeat center ;
 }
 .al_center {
 	text-align: center;
@@ -432,7 +425,7 @@ input:checked + .slider:before {
 	font-weight: 200;
 }
 .textarea_wrap textarea::placeholder {
-	color: #000;
+
 }
 .textarea_wrap span {
 	font-size: 13px;
@@ -574,6 +567,34 @@ input:checked + .slider:before {
 .intro  .swiper-button-next{
 	background: url(../img/arr_next.png) no-repeat center / contain;
 	width: 20px;
+}
+.img{
+	overflow: hidden;
+	background: #fff;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+.img img{
+	vertical-align: top;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*3:2*/
+.img.type1 {
+	width: 100%;
+	padding-top: 66.66%;
+}
+/*1:1*/
+.img.type2 {
+	width: 100%;
+	padding-top: 100%;
+}
+/*4:3*/
+.img.type3 {
+	width: 100%;
+	padding-top: 75%;
 }
 /*
 =======================================================================
@@ -817,6 +838,10 @@ intro
 .intro .part3 .gray_box {
 	padding: 50px 0;
 }
+.intro .part3 .gray_box .accodian label {
+	font-size: 16px;
+	font-weight: 200;
+}
 .intro .part3 .context_box {
 	max-width: 500px;
 	padding: 50px 60px ;
@@ -910,6 +935,9 @@ intro
 }
 .intro.jp .part2 .keywords > span{
 	font-size: 16px;
+}
+.intro .part3 .btn_wrap {
+text-align: center;
 }
 /*
 =======================================================================
@@ -1153,7 +1181,7 @@ email_none
 	top: 15px;
 }
 .user_info .pw_change {
-	border-bottom: 2px solid #000;
+	/*border-bottom: 2px solid #000;*/
 	position: relative;
 	padding-bottom: 10px;
 } 
@@ -1372,6 +1400,106 @@ email_none
 }
 .layer_popup .terms .cont_title{
 	margin-bottom: 30px;
+}
+/*
+=======================================================================
+메인
+=======================================================================
+*/
+.main .main_part1{
+	display: table;
+    width: 100%;
+}
+.main .main_part1 > div {
+	display: table-cell;
+	width: 25%;
+	vertical-align: top;
+}
+.main .main_part1 > div:nth-of-type(2){
+	width: 50%;
+	padding: 0 20px ;
+}
+.main .main_part1 > div .txt {
+	font-size: 18px;	
+	margin-top: 40px;
+}
+.main .main_part1 > div .txt > div > p {
+	border-top: 2px solid #000;
+	padding-top: 20px;
+}
+.main .main_part1 > div .txt > div:last-child{
+	padding-left: 10px;
+}
+.main .main_part1 > div .txt > div:first-child{
+	padding-right: 10px;
+}
+.main .main_part1 .txt_list li {
+	font-size: 18px;
+}
+.main .main_part2 .tb > div:first-child {
+	padding-right: 30px;
+}
+.main .main_part2 .tb > div:last-child {
+	padding-left: 30px;
+}
+.main .main_tit {
+	font-size: 28px;
+	font-weight: 900;
+}
+.main  .bor {
+	padding-top: 50px;
+	border-top: 2px solid #c9242b
+}
+.txt_list li{
+	font-size: 20px;
+	padding:10px 0;
+	text-align: left;
+	border-bottom: 1px solid #e0e0e0;
+	word-break: keep-all;
+}
+.main .tb > div {
+	text-align: left;
+}
+.main .main_part4 .tb > div:first-child {
+	padding-right: 30px;
+}
+.main .main_part4 .tb > div:last-child {
+	padding-left: 30px;
+}
+.img_list li {
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: table;
+}
+.img_list li > div{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 20px;
+}
+.img_list li > div.img_div {
+	width: 160px;
+	padding-left: 0;
+}
+.img_list.type3 li {
+	display: inline-block;
+	width: 100%;
+}
+.img_list.type3 li > div {
+	display: inline-block;
+	width: 100%;
+}
+.img_list.type3 {
+	overflow: hidden;
+}
+.img_list.type3 li {
+	float: left;
+	width: calc( 16% - 36px );
+	margin-right: 50px;
+	font-size: 18px;
+}
+.img_list.type3 li:last-child{
+	margin-right: 0;
 }
 @media (max-width: 1100px) {
 	.container {
