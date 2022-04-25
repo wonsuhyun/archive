@@ -1,6 +1,20 @@
 /* object */
 $(document).ready(function(){
-	
+	$("header button.hamberger").on("click",function(){
+		$("html,body").addClass("scroll_none");
+		$(".lnb").show();
+	})
+
+	$(".lnb .close").on("click",function(){
+		$("html,body").removeClass("scroll_none");
+		$(".lnb").hide();
+	})
+
+	$("nav .hamberger_b .hamberger").on("click",function(){
+		$(".lnb .lnb_conts").stop().slideToggle(300);
+	})
+
+
 	$(".tab .tab-list > div").on("click",function(){
 		var idx = $(this).index()
 		$(this).parent().find('div').removeClass('on');
