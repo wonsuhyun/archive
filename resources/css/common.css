@@ -2403,6 +2403,10 @@ email_none
 		display: inline-block;
 		width: 50%;
 	}
+	.intro.jp .redir_tab > div:nth-of-type(3) {
+		display: inline-block;
+		width: 100%;
+	}
 	.intro .redir_tab  a{
 		font-size: 14px;
 		padding: 15px 0;
