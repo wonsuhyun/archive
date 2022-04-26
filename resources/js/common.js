@@ -81,7 +81,31 @@ $(document).ready(function(){
 
 //스크롤이벤트
 function scrollEvent(){
+	var lnb = $("nav").offset().top;
+	var header = $("header").offset().top;
+	var window = $(this).scrollTop();
+	if ($(window).outerWidth() > 1200){
+		// pc
+		if(lnb <= window) {
+			$("nav").addClass("fixed");
+		} else {
+			$("nav").removeClass("fixed");
+		}
+	}else{
+		// mobile
+		if(window > 0) {
+			$("header").addClass("fixed");
+		} else {
+			$("header").removeClass("fixed");
+		}
 
+	}
+
+	$(window).scroll(function() {
+		var window = $(this).scrollTop();
+
+
+	})
 }
 
 //리사이즈 이벤트

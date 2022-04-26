@@ -680,10 +680,15 @@ input:checked + .slider:before {
 header{
 	border-bottom: 1px solid #d4d4d4;
 }
+header.fixed{
+	position:fixed;
+}
 nav{
 	border-bottom: 1px solid #d4d4d4;
 }
-
+nav.fixed {
+	position:fixed;
+}
 nav .gnb {
 	display: flex;
 }
