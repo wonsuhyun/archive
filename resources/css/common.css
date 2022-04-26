@@ -748,6 +748,11 @@ nav  .real_time li {
 	overflow: hidden;
 	
 }
+header .logo {
+	text-indent: -999999px;
+	font-size: 0;
+	overflow: hidden;
+}
 header .for_m li {
 	display: inline-block;
 }
@@ -2078,6 +2083,7 @@ email_none
 	header .logo img {
 		width: 140px;
 	}
+
 	.for_m {
 		display: block;
 	}
