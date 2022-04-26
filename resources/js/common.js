@@ -101,12 +101,6 @@ function scrollEvent(){
 		}
 
 	}
-
-	$(window).scroll(function() {
-		var window = $(this).scrollTop();
-
-
-	})
 }
 
 //리사이즈 이벤트

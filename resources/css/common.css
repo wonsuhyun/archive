@@ -681,13 +681,20 @@ header{
 	border-bottom: 1px solid #d4d4d4;
 }
 header.fixed{
-	position:fixed;
+
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
 }
 nav{
 	border-bottom: 1px solid #d4d4d4;
 }
 nav.fixed {
-	position:fixed;
+	 position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
 }
 nav .gnb {
 	display: flex;
