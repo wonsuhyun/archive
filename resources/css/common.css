@@ -686,6 +686,8 @@ header.fixed{
     width: 100%;
     background: #fff;
     z-index: 9;
+top:0;
+left:0
 }
 nav{
 	border-bottom: 1px solid #d4d4d4;
@@ -695,6 +697,8 @@ nav.fixed {
     width: 100%;
     background: #fff;
     z-index: 9;
+top:0;
+left:0
 }
 nav .gnb {
 	display: flex;
