@@ -62,9 +62,10 @@ $(document).ready(function(){
 		scrollEvent()
 	});
 	
-	$(document).on('touchstart touchmove touchend', function(e) {
-		scrollEvent();
-	});
+	// $(document).on('touchstart touchmove touchend', function(e) {
+	// 	scrollEvent();
+	// });
+
 	$( window ).resize( function() {
 		resizeWindow()
 	});
@@ -84,7 +85,7 @@ function scrollEvent(){
 	var lnb = $("nav").offset().top;
 	var header = $("header").offset().top;
 	var window = $(this).scrollTop();
-	if ($(window).outerWidth() > 1200){
+	if ($(document).outerWidth() > 1200){
 		// pc
 		if(lnb <= window) {
 			$("nav").addClass("fixed");
