@@ -89,15 +89,19 @@ function scrollEvent(){
 		// pc
 		if(lnb <= window) {
 			$("nav").addClass("fixed");
+			$(".wrapper").css({"padding-top":"80px"})
 		} else {
 			$("nav").removeClass("fixed");
+			$(".wrapper").css({"padding-top":"0"})
 		}
 	}else{
 		// mobile
 		if(window > 0) {
 			$("header").addClass("fixed");
+			$(".wrapper").css({"padding-top":"80px"})
 		} else {
 			$("header").removeClass("fixed");
+			$(".wrapper").css({"padding-top":"0"})
 		}
 
 	}
