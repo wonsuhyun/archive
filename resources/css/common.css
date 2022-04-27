@@ -762,13 +762,13 @@ header .search a{
 	height: 20px;
 	background: url(../img/main_search.png) no-repeat center / contain;
 }
-.keyword_now {
+nav .keyword_now {
 	position: relative;
 }
-.hide_area li:first-child{
+nav .hide_area li:first-child{
 	position: relative;
 }
-.hide_area li:first-child::after{
+nav .hide_area li:first-child::after{
 	content: "";
 	background: url(../img/arr_main.png) no-repeat center;
 	width: 10px;
@@ -778,7 +778,7 @@ header .search a{
 	position: absolute;
 	transform: rotate(180deg);
 }
-.hide_area{
+nav .hide_area{
 	display: none;
 	position: absolute;
     top: 0;
@@ -791,12 +791,12 @@ header .search a{
 	border: 1px solid #d6d6d6;	
 	box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
 }
-.hide_area a strong {
+nav .hide_area a strong {
 	width: 20px;
 	display: inline-block;
 	vertical-align: middle;
 }
-.hide_area a {
+nav .hide_area a {
 	font-size: 14px;
 	font-weight: 200;
 }
