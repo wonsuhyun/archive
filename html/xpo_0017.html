@@ -31,7 +31,7 @@
             <p>
               엑스포츠미디어는 2007년 창간한 대한민국 No. 1 연예, 스포츠 매체 엑스포츠뉴스를 시작으로 <br>
               e스포츠&게임, 패션뷰티, 라이프스타일 분야 등으로 콘텐츠 영역을 확장하며 꾸준히 성장하고 있습니다.<br><br>
-              2018년에는 경제 전문 매체 <span><img src="../resources/img/logo_smart.png" width="85px" height="auto"/></span> 를 발간, 온라인 종합 미디어 기업으로 발돋움하고 있습니다.
+              2018년에는 경제 전문 매체 스마트경제를 발간, 온라인 종합 미디어 기업으로 발돋움하고 있습니다.
             </p>
           </div>
 
@@ -72,6 +72,9 @@
               <div>
                 <img src="../resources/img/img_zum.png" width="auto" height="auto" alt="줌"/>
               </div>
+              <div>
+                <img src="../resources/img/img_nate.png" width="auto" height="auto" alt="nate"/>
+              </div>
             </div>
             
             <!-- swiper 영역-->
@@ -101,6 +104,15 @@
                   </div>
                   <div class="swiper-slide">
                     <img src="../resources/img/sample02.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample12.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample13.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample14.png" width="100%" height="auto"/>
                   </div>
                 </div>
               </div>
@@ -244,13 +256,18 @@
  </body>
  <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 8,
+    slidesPerView: 4,
     spaceBetween: 10,
     loop:true,
     centeredSlides: true,
     autoplay: {
       delay: 2000,
-    }
+    },
+    breakpoints: {
+        760: {
+          slidesPerView: 7,  //브라우저가 768보다 클 때
+        }
+      },
   });
   
  </script>

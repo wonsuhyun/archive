@@ -97,29 +97,32 @@ $(document).ready(function(){
 
 //스크롤이벤트
 function scrollEvent(){
-	var nav = $(".nav_wrap").offset().top;
-	var header = $("header").offset().top;
 	var window = $(this).scrollTop();
-	if ($(document).outerWidth() > 1200){
-		// pc
-		if(nav <= window) {
-			$("nav").addClass("fixed");
-			$("header").removeClass("fixed");
-			$(".wrapper").css({"padding-top":"0"})
-		} else {
-			$("nav").removeClass("fixed");
-		}
-	}else{
-		// mobile
-		if(window > 0) {
-			$("header").addClass("fixed");
-			$(".wrapper").css({"padding-top":"83px"})
-		} else {
-			$("header").removeClass("fixed");
-			$(".wrapper").css({"padding-top":"0"})
+	if ($(".nav_wrap").length > 0 ){
+		var nav = $(".nav_wrap").offset().top;
+		var header = $("header").offset().top;
+		
+		if ($(document).outerWidth() > 1200){
+			// pc
+			if(nav <= window) {
+				$("nav").addClass("fixed");
+				$("header").removeClass("fixed");
+				$(".wrapper").css({"padding-top":"0"})
+			} else {
+				$("nav").removeClass("fixed");
+			}
+		}else{
+			// mobile
+			if(window > 0) {
+				$("header").addClass("fixed");
+				$(".wrapper").css({"padding-top":"83px"})
+			} else {
+				$("header").removeClass("fixed");
+				$(".wrapper").css({"padding-top":"0"})
+			}
 		}
 	}
-
+	
 	var str = "<button class='btn_totop'>TOP</button>"
 	if(window > 0) {
 		if ($(".btn_totop").length < 1){
@@ -133,7 +136,6 @@ function scrollEvent(){
 		$(".btn_totop").hide();
 	}
 
-	
 }
 
 //리사이즈 이벤트

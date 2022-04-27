@@ -1317,7 +1317,7 @@ intro
 }
 .intro .part1 .imgs {
 	max-width: 780px;
-	margin: 15px auto 50px auto;
+	margin: 15px auto 0 auto;
 }
 .intro .part1 .imgs > div {
 	vertical-align: middle;
@@ -1447,9 +1447,14 @@ intro
 	right: calc( 50% - 40px );
 
 }
+.intro .swiper  .swiper-wrapper{
+	margin-left: 7%;
+}
 .intro .swiper {
-	width: 114%;
-	margin-left: -7%;
+	width: 100%;
+}
+.intro .swiper {
+	width: 100%;
 }
 .intro.jp .redir_tab a{
 	font-size: 18px;
@@ -2357,7 +2362,9 @@ email_none
 	}
 }
 @media (max-width: 760px) {
-
+	.intro .swiper .swiper-wrapper {
+		margin-left: 0;
+	}
 	.main .main_part3.bor {
 		border-top: none;
 		padding-top: 0;

@@ -72,39 +72,13 @@
               <div>
                 <img src="../resources/img/img_zum.png" width="auto" height="auto" alt="줌"/>
               </div>
-            </div>
-
-            <div class="for_pc photo">
               <div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample07.png" width="100%" height="auto"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample01.png" width="100%" height="auto"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample02.png" width="100%" height="auto"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample03.png" width="100%" height="auto"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample04.png" width="100%" height="auto"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample08.png" width="100%" height="auto"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample09.png" width="100%" height="auto"/>
-                </div>
-                <div class="swiper-slide">
-                  <img src="../resources/img/sample10.png" width="100%" height="auto"/>
-                </div>
+                <img src="../resources/img/img_nate.png" width="auto" height="auto" alt="nate"/>
               </div>
             </div>
             
             <!-- swiper 영역-->
-            <div class="swiper_wrap for_m">
+            <div class="swiper_wrap">
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -131,12 +105,17 @@
                   <div class="swiper-slide">
                     <img src="../resources/img/sample02.png" width="100%" height="auto"/>
                   </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample12.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample13.png" width="100%" height="auto"/>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../resources/img/sample14.png" width="100%" height="auto"/>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div>
-
             </div>
           </section>
           <section class="al_center part2" id="part2">
@@ -270,32 +249,20 @@
   </div>
  </body>
  <script>
-  var swiper ;
-  $( window ).resize( function() {
-    var winW = $(window).outerWidth();
-    if (winW <= 760){
-      init();
-    }else{
-      swiper.destroy();
-      swiper = null;
-    }
-  });
-
-  init ();
-
-  function init (){
-    if ($(".mySwiper").is(":visible") && !swiper ){
-      swiper = new Swiper(".mySwiper", {
-        slidesPerView: 5,
-        spaceBetween: 10,
-        loop:true,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2000,
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2000,
+    },
+    breakpoints: {
+        760: {
+          slidesPerView: 7,  //브라우저가 768보다 클 때
         }
-      });
-    }
-  }
+      },
+  });
 
  </script>
 </html>
