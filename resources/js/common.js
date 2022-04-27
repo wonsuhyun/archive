@@ -1,5 +1,13 @@
 /* object */
 $(document).ready(function(){
+
+	$(".main .img").each(function(){
+		var elImg = $(this).find("img");
+		if (elImg.outerHeight() < $(this).outerHeight()){
+			var mg = ($(this).outerHeight() - elImg.outerHeight())/2;
+			elImg.css({"top":mg+"px"})
+		}
+	})
 	$("header button.hamberger").on("click",function(){
 		$("html,body").addClass("scroll_none");
 		$(".lnb").show();
@@ -82,29 +90,43 @@ $(document).ready(function(){
 
 //스크롤이벤트
 function scrollEvent(){
-	var lnb = $("nav").offset().top;
+	var nav = $(".nav_wrap").offset().top;
 	var header = $("header").offset().top;
 	var window = $(this).scrollTop();
 	if ($(document).outerWidth() > 1200){
 		// pc
-		if(lnb <= window) {
+		if(nav <= window) {
 			$("nav").addClass("fixed");
-			$(".wrapper").css({"padding-top":"80px"})
+			$("header").removeClass("fixed");
+			$(".wrapper").css({"padding-top":"0"})
 		} else {
 			$("nav").removeClass("fixed");
-			$(".wrapper").css({"padding-top":"0"})
 		}
 	}else{
 		// mobile
 		if(window > 0) {
 			$("header").addClass("fixed");
-			$(".wrapper").css({"padding-top":"80px"})
+			$(".wrapper").css({"padding-top":"83px"})
 		} else {
 			$("header").removeClass("fixed");
 			$(".wrapper").css({"padding-top":"0"})
 		}
-
 	}
+
+	var str = "<button class='btn_totop'>TOP</button>"
+	if(window > 0) {
+		if ($(".btn_totop").length < 1){
+			$("body").append(str);
+			$(".btn_totop").on("click",function(){
+				$("html").animate({ scrollTop: 0 });
+			})
+		}
+		$(".btn_totop").show();
+	}else{
+		$(".btn_totop").hide();
+	}
+
+	
 }
 
 //리사이즈 이벤트
