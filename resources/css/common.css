@@ -2443,6 +2443,7 @@ email_none
 	}
 }
 @media (max-width: 760px) {
+
 	.intro .swiper .swiper-wrapper {
 		margin-left: 0;
 	}
@@ -2553,6 +2554,10 @@ email_none
 		width: 100%;
 		padding: 0;
 		display: block;
+	} 
+
+	.main .main_part4 .tb > div:first-child{
+		padding-bottom: 20px;
 	} 
 	.main .main_part2  .tb > div:last-child{
 		display: none;
