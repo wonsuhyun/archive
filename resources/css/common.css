@@ -297,6 +297,7 @@ input[type=checkbox]:checked + label::after{
 	background: url(../img/icon_tooltip.png) no-repeat center / contain;
 	vertical-align: middle;
 	margin-right:8px;
+	margin-top: -1px;
 }
 .red .tooltip {
 	background: url(../img/icon_tooltip_red.png) no-repeat center / contain;
@@ -329,6 +330,7 @@ input[type=checkbox]:checked + label::after{
 	width: 15px;
 	height: 15px;
 	margin-right: 5px;
+
 }
 .accodian{
 	position: relative;
@@ -924,6 +926,9 @@ footer .footer1 .row > div{
 footer .footer1 .row > div:last-child{
 	margin-bottom: 0;
 }
+footer .footer1 .row:last-child > div{
+	margin-bottom: 0;
+}
 footer .footer1 .row > div:first-child{
 	width: 135px;
 	font-weight: 900;
@@ -981,14 +986,16 @@ footer .footer2 .info .footer_img {
 	background-color: #fff;
 	z-index: 99;
 }
-
+.lnb .lnb_conts .al_center img {
+	width: 140px;
+}
 .lnb .lnb_conts > div {
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .lnb .lnb_head {
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-top: 18px;
+	padding-bottom: 15px;
 }
 .lnb .user {
 	padding-left: 25px;
@@ -1004,7 +1011,7 @@ footer .footer2 .info .footer_img {
 
 }
 .lnb .member * {
-	font-size: 12px;
+	font-size: 15px;
 }
 .lnb .member > div{
 	display: table-cell;
@@ -1040,13 +1047,15 @@ footer .footer2 .info .footer_img {
 	font-weight: 900;
 }
 .lnb  .lnb_list.part2 p {
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 900;
 	margin-bottom: 10px;
+	text-align: center;
 }
 .lnb .lnb_list.part2  li {
-	font-size: 12px;
+	font-size: 15px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 .lnb .lnb_list.part2{
 	background-color: #f8f8f8;
@@ -1076,7 +1085,7 @@ footer .footer2 .info .footer_img {
 	text-align: center;
 }
 .lnb .lnb_fotter a{
-	font-size: 10px;
+	font-size: 13px;
 }
 .lnb .sns{
 	padding-bottom: 35px;
@@ -1162,6 +1171,10 @@ popup
 	position: relative;
 	border-bottom: 2px solid #000;
 	padding: 25px  0 20px 0;
+}
+.layer_popup  .pop_header .header_conts a {
+	display: inline-block;
+	width: 117px;
 }
 .layer_popup  .cont_title {
 	text-align: center;
@@ -1304,7 +1317,7 @@ intro
 }
 .intro .part1 .imgs {
 	max-width: 780px;
-	margin: 15px auto 0 auto;
+	margin: 15px auto 50px auto;
 }
 .intro .part1 .imgs > div {
 	vertical-align: middle;
@@ -2036,6 +2049,9 @@ email_none
 	left:auto;
 	right: 0;
 }
+.main .main_part6{
+	margin-bottom: 80px;
+}
 .main .main_part1 .center .main_img{
 	position: relative;
 }
@@ -2110,10 +2126,11 @@ email_none
 	bottom: 50px;
 	border-radius: 50px;
 	padding: 50px 0 30px 0;
-	background: url(../img/btn_totop.png) no-repeat center top 25px / 17px,#3d4550 ;
+	background: url(../img/btn_totop.png) no-repeat center top 25px / 17px,#515a66 ;
 	right: calc( 50% - 600px );
 }
 @media (min-width: 1201px) {
+
 	.lnb .lnb_list > div{
 		padding:5px 0
 	}
@@ -2129,8 +2146,18 @@ email_none
 	.lnb{
 		display: inline-block!important;
 	}
-	.lnb .lnb_head {
+	.lnb .lnb_head{
+		padding:0
+	}
+	.lnb .lnb_head *{
 		display: none;
+	}
+	.lnb .lnb_head button.close {
+		display: inline-block;
+		top: 20px;
+	}
+	.lnb .member > div:last-child{
+		padding-right: 32px;
 	}
 	.lnb > div {
 		max-width: 1200px;
@@ -2163,7 +2190,7 @@ email_none
 		left: calc( 50% - 600px);
 		max-width: 1200px;
 		right: auto;
-		top: 70px;
+		top: 0;
 		bottom: auto;
 		
 	}
@@ -2174,6 +2201,9 @@ email_none
 }
 
 @media (max-width: 1200px) {
+	.main .main_part6{
+		margin-bottom: 45px;
+	}
 	.btn_totop {
 		right: auto;
 		left: calc( 100% - 60px );
@@ -2225,6 +2255,7 @@ email_none
 		padding-right:30px;
 		margin-bottom: 10px;
 		font-size: 13px;
+		display: none;
 	}
 
 	header .hamberger_b {
@@ -2273,7 +2304,7 @@ email_none
 		width: 100%;
 		display: block;
 		border: none;
-		font-size: 15px;
+		font-size: 18px;
 	}
 	footer .footer1 .row {
 		margin-bottom: 23px;
@@ -2287,7 +2318,7 @@ email_none
 	footer .footer1 .row > div li{
 		margin: 0;
 		margin-right :10px;
-		font-size: 12px;
+		font-size: 14px;
 	}
 	footer .footer1{
 		padding: 30px 0;
@@ -2301,12 +2332,12 @@ email_none
 	}
 	footer .footer2 .footer_nav > div{
 		margin-right: 15px;
-		font-size: 12px;
+		font-size: 14px;
 	}
 	footer .footer2 .info{
 		text-align: center;
 		padding: 50px 20px 75px 20px;
-		font-size: 10px;
+		font-size: 12px;
 	}
 	footer .footer2 .info .logo img{
 		width: 90px;
@@ -2350,7 +2381,7 @@ email_none
 		color: #000;
 		padding: 0;
 		border-bottom: 1px solid #000;
-		bottom: -84px;
+		bottom: -91px;
 		padding-bottom: 15px;
 	}
 
@@ -2448,7 +2479,7 @@ email_none
 	.main .main_part1{
 		position: relative;
 		display: block;
-		padding-top: calc( 100%*0.73 + 84px );
+		padding-top: calc( 100%*0.73 + 91px );
 	}
 	.main .main_part1 > div{
 		display: inline-block;
@@ -2617,7 +2648,7 @@ email_none
 		font-size: 12px;
 	}
 	.incruit .cmt {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.incruit .gray_box{
 		font-size: 12px;

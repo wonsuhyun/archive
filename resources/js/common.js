@@ -14,8 +14,13 @@ $(document).ready(function(){
 	})
 
 	$(".lnb .close").on("click",function(){
-		$("html,body").removeClass("scroll_none");
-		$(".lnb").hide();
+		if ($(document).outerWidth()>1200){
+			$(".lnb .lnb_conts").stop().slideUp(300);
+		}else{
+			$("html,body").removeClass("scroll_none");
+			$(".lnb").hide();
+		}
+
 	})
 
 	$("nav .hamberger_b .hamberger").on("click",function(){
@@ -32,14 +37,16 @@ $(document).ready(function(){
 		$(this).parents('.tab').find('.tab-item .item:eq('+idx+')').addClass('on')
 	})
 
-	$(".accodian .acc_btn").not(".display").on("click",function(){
+	$(".accodian .acc_btn,.accodian .acc_title").on("click",function(){
 		if ($(this).hasClass("on")){
-			$(this).removeClass("on")
+			$(this).removeClass("on");
+			$(this).parents(".accodian").find(".acc_btn").removeClass("on");
 			$(this).parents(".accodian").find(".acc_conts").stop().slideUp(200)
 		}else{
 			$(this).parents(".accodians").find(".acc_btn").removeClass("on")
 			$(this).parents(".accodians").find(".acc_conts").stop().slideUp(200);
 			$(this).addClass("on");
+			$(this).parents(".accodian").find(".acc_btn").addClass("on");
 			$(this).parents(".accodian").find(".acc_conts").slideDown(200);
 			
 		}
