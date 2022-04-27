@@ -2159,6 +2159,11 @@ email_none
 		margin-right: 15px;
 		font-size: 12px;
 	}
+	footer .footer2 .info{
+		text-align: center;
+		padding: 50px 20px 75px 20px;
+		font-size: 10px;
+	}
 }
 @media (max-width: 760px) {
 
@@ -2298,11 +2303,7 @@ email_none
 	.main .main_part4{
 		margin-bottom: 0;
 	}
-	footer .footer2 .info{
-		text-align: center;
-		padding: 50px 20px 75px 20px;
-		font-size: 10px;
-	}
+
 	footer .footer2 .info .logo img{
 		width: 90px;
 	}
