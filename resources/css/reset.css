@@ -2,7 +2,18 @@
 /* ============================================================================================
 	Reset
 ============================================================================================ */
+html {
+	/* Prevent font scaling in landscape */
 
+   -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+   -moz-text-size-adjust: none; /*Firefox*/
+
+   -ms-text-size-adjust: none;  /*Ie*/
+
+   -o-text-size-adjust: none; /*old versions of Opera*/
+
+}
 body,h1,h2,h3,h4,h5,h6,table,div,header,section,a,ul,li,tr,td,th,tbody,thead,tfoot,ol,button,input,select,p{margin: 0; padding:0 ; box-sizing: border-box;}
 
 nav, ul{

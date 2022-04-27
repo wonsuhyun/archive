@@ -315,7 +315,7 @@ input[type=checkbox]:checked + label::after{
 .notice li .tooltip {
 	position: absolute;
 	left: 0;
-	top: 1px;
+	top: 2px;
 }
 .notice .red li {
 	color: #c9242b;
