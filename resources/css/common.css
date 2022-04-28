@@ -1292,14 +1292,24 @@ intro
 	border-bottom: 1px solid #969696;
 }
 .intro .lang button{
-	padding-left: 40px;
-	background: url(../img/lang_ko.png) no-repeat 10% center;
+	position: relative;
+	/*padding-left: 40px;*/
+	/*background: url(../img/lang_ko.png) no-repeat 10% center;*/
+}
+.intro .lang button:nth-of-type(2):after,.intro .lang button:nth-of-type(3){
+	content: "";
+	width: 1px;
+	height: 15px;
+	top:5px;
+	position: absolute;
+	background-color: #969696;
+	left: 0;
 }
 .intro .lang button:nth-of-type(2){
-	background: url(../img/lang_eng.png) no-repeat 10% center;
+	/*background: url(../img/lang_eng.png) no-repeat 10% center;*/
 }
 .intro .lang button:nth-of-type(3){
-	background: url(../img/lang_jp.png) no-repeat 10% center;
+	/*background: url(../img/lang_jp.png) no-repeat 10% center;*/
 }
 .intro > .gray_box {
 	padding: 50px 0;
