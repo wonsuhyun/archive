@@ -12,11 +12,16 @@ $(document).ready(function(){
 			$("html,body").removeClass("scroll_none");
 			$(".lnb").hide();
 		}
-
 	})
 
-	$("nav .hamberger_b .hamberger").on("click",function(){
-		$(".lnb .lnb_conts").stop().slideToggle(300);
+	$("nav .hamberger_b .hamberger").on("mouseover",function(){
+		$(".lnb .lnb_conts").slideDown(300);
+	})
+	
+	$('.lnb').on('mouseleave',function(){
+		if ($(document).outerWidth() > 1200){
+			$(".lnb .lnb_conts").slideUp(300);
+		}
 	})
 
 
@@ -68,23 +73,18 @@ $(document).ready(function(){
 	$(window).scroll(function(e) {
 		scrollEvent()
 	});
-	
-	// $(document).on('touchstart touchmove touchend', function(e) {
-	// 	scrollEvent();
-	// });
+
 
 	$( window ).resize( function() {
 		resizeWindow()
 	});
 
-
 	$('.layer_popup .popup .pop_close').on("click",function(){
 		$(this).parents(".layer_popup").removeClass("on");
 		$("html,body").removeClass("scroll_none");
 	})
-
+	
 	popup();
-
 })
 
 //스크롤이벤트

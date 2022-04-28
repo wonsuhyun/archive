@@ -840,7 +840,7 @@
                                 <a href="#">
                                     <div class="img_div">
                                         <div class="img type1">
-                                            <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                            <img src="../resources/img/sample06.png" width="100%" height="auto" alt="sample"/>
                                         </div>
                                     </div>
                                     <div>
@@ -852,7 +852,7 @@
                                 <a href="#">
                                     <div class="img_div">
                                         <div class="img type1">
-                                            <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                            <img src="../resources/img/sample06.png" width="100%" height="auto" alt="sample"/>
                                         </div>
                                     </div>
                                     <div>
@@ -1057,7 +1057,9 @@
                     <div><h3>채용안내</h3></div>
                     <div><h3>공지사항</h3></div>
                     <div class="logo">
-                        <img src="../resources/img/logo_smart.png" width="135px" height="auto" alt="스마트경제"/>
+                        <a href="#">
+                            <img src="../resources/img/logo_smart.png" width="135px" height="auto" alt="스마트경제"/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1085,11 +1087,11 @@
     </footer>
   </div>
   <script>
-$(".real_time_wrap").on("click",function(){
-    $(this).siblings(".hide_area").stop().slideDown(200)
+$(".real_time_wrap").on("mouseover",function(){
+    $(this).siblings(".hide_area").slideDown(200);
 })
-$(".hide_area").on("click",function(){
-    $(this).stop().slideUp(200);
+$(".hide_area").on("mouseleave",function(){
+    $(".hide_area").slideUp(200);
 })
 rolling();
 function rolling() {

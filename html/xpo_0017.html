@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
  </head>
  <body>
-  <div class="wrapper intro">
+  <div class="wrapper intro ko">
       <div class="container">
           <h2 class="pg_title">회사소개</h2>
           <div class="al_center lang mgt20">
@@ -174,15 +174,15 @@
                     </div>
                     <div class="required">
                       <label class="title">이메일</label>
-                      <input type="text" placeholder="이름을 입력해주세요"/>
+                      <input type="text" placeholder="이메일을 입력해주세요"/>
                     </div>
                     <div class="">
                       <label class="title">전화번호</label>
-                      <input type="text" placeholder="이름을 입력해주세요"/>
+                      <input type="text" placeholder="전화번호를 입력해주세요"/>
                     </div>
                     <div class="required">
                       <label class="title">제목</label>
-                      <input type="text" placeholder="이름을 입력해주세요"/>
+                      <input type="text" placeholder="제목을 입력해주세요"/>
                     </div>
                     <div class="required">
                       <label class="title">문의내용</label>
@@ -256,20 +256,23 @@
   </div>
  </body>
  <script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    loop:true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2000,
-    },
-    breakpoints: {
-        760: {
-          slidesPerView: 7,  //브라우저가 768보다 클 때
-        }
+   $(document).ready(function(){
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      loop:true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
       },
-  });
+      breakpoints: {
+          760: {
+            slidesPerView: 7,  //브라우저가 768보다 클 때
+          }
+        },
+    });
+   })
+  
   
  </script>
 </html>
