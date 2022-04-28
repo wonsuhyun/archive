@@ -2766,11 +2766,14 @@ email_none
 		display: block;
 		overflow: hidden;
 	}
+	.lnb .lnb_list .lnb_fotter {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.lnb .lnb_fotter > div{
 		display: inline-block;
 		width: 33%;
 		margin-bottom: 10px;
-		text-align: left;
 		float: left;
 	}
 	.comment_view{
