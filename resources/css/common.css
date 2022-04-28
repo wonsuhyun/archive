@@ -578,16 +578,16 @@ input:checked + .slider:before {
 	background: url(../img/arr_next.png) no-repeat center / contain;
 	width: 20px;
 }
-.intro .photo{
-	width: 100%;
-	overflow: hidden;
-}
-.intro .photo > div {
-	overflow: hidden;
-	width: 114%;
-	margin-left: -7%;
-}
-.intro .photo > div .swiper-slide{
+/*.intro .photo{*/
+/*	width: 100%;*/
+/*	overflow: hidden;*/
+/*}*/
+/*.intro .photo > div {*/
+/*	overflow: hidden;*/
+/*	width: 114%;*/
+/*	margin-left: -7%;*/
+/*}*/
+/*.intro .photo > div .swiper-slide{
 	width: calc( 12.5% - 8.8px );
 	display: inline-block;
 	float: left;
@@ -595,7 +595,7 @@ input:checked + .slider:before {
 }
 .intro .photo > div .swiper-slide:last-child{
 	margin-right: 0;
-}
+}*/
 .img{
 	overflow: hidden;
 	background: #fff;
@@ -1471,7 +1471,7 @@ intro
 
 }
 .intro .swiper  .swiper-wrapper{
-	margin-left: 7%;
+	/*margin-left: 7%;*/
 }
 .intro .swiper {
 	width: 100%;
