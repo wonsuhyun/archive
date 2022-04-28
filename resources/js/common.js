@@ -1,8 +1,8 @@
 /* object */
 $(document).ready(function(){
 
-	$(".main .img img").each(function(){
-		var elImg = $(this);
+	$(".main .img").each(function(){
+		var elImg = $(this).find("img");
 		elImg.load(function () {
 			if (elImg.outerHeight() < $(this).outerHeight()){
 				var mg = ($(this).outerHeight() - elImg.outerHeight())/2;
