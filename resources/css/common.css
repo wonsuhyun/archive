@@ -1810,6 +1810,7 @@ email_none
 	padding: 20px 0;
 	margin: 15px 0 85px 0;
 	position: relative;
+	word-break: keep-all;
 }
 .incruit .cmt::after {
 	content: "";
@@ -2758,7 +2759,7 @@ email_none
 	}
 	.incruit .cmt {
 		font-size: 14px;
-		text-align: left;
+
 	}
 	.incruit btn_wrap {
 		padding-bottom: 50px;
