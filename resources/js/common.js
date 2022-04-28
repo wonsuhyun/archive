@@ -1,15 +1,5 @@
 /* object */
 $(document).ready(function(){
-
-	$(".main .img").each(function(){
-		var elImg = $(this).find("img");
-		elImg.load(function () {
-			if (elImg.outerHeight() < $(this).outerHeight()){
-				var mg = ($(this).outerHeight() - elImg.outerHeight())/2;
-				elImg.css({"top":mg+"px"})
-			}
-		});
-	})
 	$("header button.hamberger").on("click",function(){
 		$("html,body").addClass("scroll_none");
 		$(".lnb").show();
@@ -193,3 +183,13 @@ var XSP = {
 		})
 	}
 }
+
+window.onload = function(){
+	$(".main .img").each(function(){
+		var elImg = $(this).find("img");
+		if (elImg.outerHeight() < $(this).outerHeight()){
+			var mg = ($(this).outerHeight() - elImg.outerHeight())/2;
+			elImg.css({"top":mg+"px"})
+		}
+	})
+};
