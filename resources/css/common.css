@@ -1470,6 +1470,9 @@ intro
 	right: calc( 50% - 40px );
 
 }
+.intro *{
+	word-break: keep-all;
+}
 .intro .swiper  .swiper-wrapper{
 	/*margin-left: 7%;*/
 }
