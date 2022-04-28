@@ -18,7 +18,7 @@ $(document).ready(function(){
 		$(".lnb .lnb_conts").slideDown(300);
 	})
 	
-	$('.lnb').on('mouseleave',function(){
+	$('nav').on('mouseleave',function(){
 		if ($(document).outerWidth() > 1200){
 			$(".lnb .lnb_conts").slideUp(300);
 		}
@@ -83,7 +83,7 @@ $(document).ready(function(){
 		$(this).parents(".layer_popup").removeClass("on");
 		$("html,body").removeClass("scroll_none");
 	})
-	
+
 	popup();
 })
 

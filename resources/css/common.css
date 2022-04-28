@@ -2257,12 +2257,12 @@ email_none
 		display: none;
 	}
 	.lnb .lnb_head button.close {
-		display: inline-block;
-		top: 20px;
+		display: none
+		
 	}
-	.lnb .member > div:last-child{
+	/* .lnb .member > div:last-child{
 		padding-right: 32px;
-	}
+	} */
 	.lnb > div {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -2294,7 +2294,7 @@ email_none
 		left: calc( 50% - 600px);
 		max-width: 1200px;
 		right: auto;
-		top: 0;
+		top: 70px;
 		bottom: auto;
 		
 	}
