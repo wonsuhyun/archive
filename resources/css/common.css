@@ -889,6 +889,9 @@ nav .hamberger_b button , header .hamberger_b button{
 }
 .header_conts .user {
 	font-weight: 200;
+	
+}
+.header_conts .user a {
 	padding-right: 30px;
 	background: url(../img/ico_user.png) no-repeat right 5px center ;
 }
@@ -1035,6 +1038,9 @@ footer .footer2 .info span:last-child:after {
 	padding-bottom: 15px;
 }
 .lnb .user {
+	
+}
+.lnb .user a {
 	padding-left: 25px;
 	background: url(../img/ico_user.png) no-repeat left center / contain;
 }
@@ -1728,6 +1734,15 @@ email_none
 	
 }
 .user_info .btn_tg {
+
+}
+.user_info button.btn_small {
+
+}
+.user_info button.cnt {
+
+}
+.user_info button.rl {
 
 }
 .user_info .btn_tg > span{

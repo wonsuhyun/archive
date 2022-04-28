@@ -1117,6 +1117,10 @@ function rolling() {
         });
     }, 5000);
 }
+
+    $(".mobile_more .more_btn").on("click",function(){
+        $(this).parents("section").find(".tb > div:last-child").toggle()
+    })
   </script>
  </body>
 </html>
