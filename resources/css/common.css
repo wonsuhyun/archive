@@ -1843,6 +1843,9 @@ email_none
 .incruit .img_wrap img {
 	min-width: 760px;
 }
+.incruit .btn_wrap {
+	padding-bottom: 40px;
+}
 /*
 =======================================================================
 공지사항
@@ -2762,7 +2765,7 @@ email_none
 
 	}
 	.incruit btn_wrap {
-		padding-bottom: 50px;
+		padding-bottom: 100px;
 	}
 	.incruit .gray_box{
 		font-size: 12px;
