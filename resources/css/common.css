@@ -2395,6 +2395,9 @@ email_none
 	footer .footer1 .row {
 		margin-bottom: 23px;
 	}
+	footer .footer1 .row:last-child{
+		margin-bottom: 0;
+	}
 	footer .footer1 .row > div{
 		margin-bottom: 2px;
 	}
