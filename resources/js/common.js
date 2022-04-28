@@ -151,19 +151,20 @@ function popup() {
 		var popH = $(this)[0].scrollHeight;
 		var winH = $(window).height();
 		var winW = $(window).outerWidth();
-		console.log(popH);
+		$("html,body").addClass("scroll_none");
+
 		if (winW > 760){
 			if (popH > winH ) {
 				$(this).closest('.layer_popup').addClass('h_full');
 				$(this).css({'margin-left': -popW / 2, 'margin-top': '0'});
 			} else {
 				$(this).closest('.layer_popup').removeClass('h_full');
-				$(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2})
+				$(this).css({'margin-left': -popW / 2, 'margin-top': -popH / 2});
 			}
 		} else {
 			$(this).css({'margin-left': 0, 'margin-top': 0});
 		}
-		$("html,body").addClass("scroll_none");
+
     });
 }
 

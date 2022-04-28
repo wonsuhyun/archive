@@ -13,7 +13,7 @@
  </head>
  <body>
   <div class="wrapper" style="width: 100%;">
-    <div class="layer_popup on">
+    <div class="layer_popup">
       <div class="popup"> 
         <div class="pop_header">
           <div class="header_conts">
@@ -248,5 +248,11 @@
   </div>
  </body>
 <script>
+
+    $(document).ready(function(){
+        $(".layer_popup").addClass("on");
+        popup();
+    });
+
 </script>
 </html>
