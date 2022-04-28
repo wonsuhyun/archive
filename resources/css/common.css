@@ -2049,7 +2049,7 @@ email_none
 .main .main_part4 .pt2 .img_list{
 	margin-bottom: 40px;
 }
-.main .main_part4 .pt2 .img_list li.point > div.img_div {
+.main .main_part4 .pt2 .img_list li.point a > div.img_div {
 	width: 32%;
 }
 .main .main_part5 .tb > div {
@@ -2070,7 +2070,7 @@ email_none
 	right: 0;
 }
 .main .main_part6{
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 }
 .main .main_part1 .center .main_img{
 	position: relative;
@@ -2285,7 +2285,7 @@ email_none
 
 @media (max-width: 1200px) {
 	.main .main_part6{
-		margin-bottom: 45px;
+		margin-bottom: 30px;
 	}
 	.btn_totop {
 		right: auto;
@@ -2422,7 +2422,7 @@ email_none
 	}
 	footer .footer2 .info{
 		text-align: center;
-		padding: 50px 20px 75px 20px;
+		padding: 50px 50px 75px 50px;
 		font-size: 12px;
 	}
 	footer .footer2 .info .logo img{
@@ -2443,7 +2443,9 @@ email_none
 	}
 }
 @media (max-width: 760px) {
-
+	footer .footer2 .info{
+		padding: 50px 20px 75px 20px;
+	}
 	.intro .swiper .swiper-wrapper {
 		margin-left: 0;
 	}
