@@ -2695,6 +2695,7 @@ email_none
 	}
 	.intro .intro_cmt {
 		font-size: 17px;
+		background: none;
 	}
 	.intro .top_box .red {
 		font-size: 20px;
@@ -2744,6 +2745,10 @@ email_none
 	}
 	.incruit .cmt {
 		font-size: 14px;
+		text-align: left;
+	}
+	.incruit btn_wrap {
+		padding-bottom: 50px;
 	}
 	.incruit .gray_box{
 		font-size: 12px;
