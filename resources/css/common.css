@@ -2074,7 +2074,9 @@ email_none
 .main_part1 .txt_list li p{
 	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 }
 .txt_list li p{
 	overflow: hidden;
@@ -2467,7 +2469,7 @@ email_none
 	
 }
 .dual_conts > div:first-child{
-	flex: 2;
+	flex: 2.5;
 	padding-left: 0;
 	padding-right: 60px;
 	border-right: 1px solid #e0e0e0;
@@ -2529,21 +2531,21 @@ email_none
 	top: 7px;
 	position: absolute;
 }
-.search_result .small_area li a > div.img_div {
+/* .small_area li a > div.img_div {
 	width: 110px;
 }
-.search_result .small_area .img_list li a{
+.small_area .img_list li a{
 	font-size: 16px;
 }
-.search_result .small_area {
+.small_area {
 	position: relative;
 }
-.search_result .small_area > p {
+.small_area > p {
 	font-size: 20px;
 	font-weight: 900;
 	margin-bottom: 20px;
 }
-.search_result .small_area .more{
+.small_area .more{
 	position: absolute;
     right: 0;
     top: 0;
@@ -2551,6 +2553,58 @@ email_none
     font-weight: 200;
     color: #d8191f;
 }
+.daul_inner {
+	overflow: hidden;
+}
+.daul_inner > div{
+	float: left;
+	width: 50%;
+}
+.daul_inner > div .img_list li a > div:last-child{
+	padding-left: 15px;
+}
+.list_page.dual_conts > div:first-child{
+	padding-right: 40px;
+}
+.list_page.dual_conts .small_area li a > div.img_div {
+	width: 110px;
+}
+.list_page .list_title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.list_page.type1,
+.list_page.type2{
+	padding-top: 70px;
+}
+
+.list_page.type2 .img_list li a > div:last-child {
+	position: relative;
+}
+.list_page.type2 .img_list li a > div p {
+	padding-left: 17px;
+}
+.list_page.type2 .img_list li a > div .lank {
+	position: absolute;
+	color: #c9242b;
+	font-size: 24px;
+	font-weight: 600;
+	top: -3px;
+	left: 15;
+}
+.list_page .img_list li a{
+	margin-bottom: 20px;
+} */
+/* .img_list.type3.part3 li{ 
+    width: calc( 33.333% - 10px );
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+.img_list.type3.part3 li:nth-of-type(3n) {
+    margin-right: 0;
+} */
 @media (min-width: 1201px) {
 
 	.lnb .lnb_list > div{
