@@ -1096,8 +1096,11 @@
   </div>
   <script>
 $(".real_time_wrap").on("mouseover",function(){
-    $(this).siblings(".hide_area").slideDown(200);
+    if (!$(".lnb").is(":visible")) {
+        $(this).siblings(".hide_area").slideDown(200);
+    }
 })
+
 $(".hide_area").on("mouseleave",function(){
     $(".hide_area").slideUp(200);
 })
@@ -1119,7 +1122,13 @@ function rolling() {
 }
 
     $(".mobile_more .more_btn").on("click",function(){
-        $(this).parents("section").find(".tb > div:last-child").toggle()
+        if ($(this).text()==="더보기"){
+            $(this).text("닫기");
+            $(this).parents("section").find(".tb > div:last-child").show()
+        }else{
+            (this).text("더보기");
+            $(this).parents("section").find(".tb > div:last-child").hide()
+        }
     })
   </script>
  </body>
