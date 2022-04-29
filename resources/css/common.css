@@ -2712,7 +2712,7 @@ email_none
 	.txt_list li,
 	.img_list li a > div,
 	.main .main_part1 .txt_list li{
-		font-size: 15px;
+		font-size: 16px;
 	}
 	.img_list.type3 li{
 		font-size: 14px;
@@ -2861,7 +2861,7 @@ email_none
 		display: table;
 	}
 	.main .main_part1 .img_area a > div {
-		font-size: 15px;
+		font-size: 16px;
 		display: table-cell;
 		vertical-align: top;
 		padding-left: 20px;
