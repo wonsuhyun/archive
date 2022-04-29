@@ -2074,9 +2074,7 @@ email_none
 .txt_list li p{
 	overflow: hidden;
 	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
+	white-space: nowrap;
 }
 .txt_list li:last-child {
 	border-bottom: none;
