@@ -1030,8 +1030,8 @@ footer .footer2 .info span:last-child:after {
 	width: 140px;
 }
 .lnb .lnb_conts > div {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .lnb .lnb_head {
 	padding-top: 18px;
@@ -2783,6 +2783,10 @@ email_none
 	}
 }
 @media (max-width: 760px) {
+	.lnb .lnb_conts > div {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	.lnb .lnb_fotter a{
 		font-size: 12px;
 	}
