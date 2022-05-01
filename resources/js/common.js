@@ -26,13 +26,13 @@ $(document).ready(function(){
 	})
 
 
-	$(".tab .tab-list > div").on("click",function(){
+	$(".tab .tab_list > div").on("click",function(){
 		var idx = $(this).index()
 		$(this).parent().find('div').removeClass('on');
 		$(this).addClass('on');
 
-		$(this).parents('.tab').find('.tab-item .item').removeClass('on')
-		$(this).parents('.tab').find('.tab-item .item:eq('+idx+')').addClass('on')
+		$(this).parents('.tab').find('.tab_items >div').removeClass('on')
+		$(this).parents('.tab').find('.tab_items >div:eq('+idx+')').addClass('on')
 	})
 
 	$(".accodian .acc_btn,.accodian .acc_title").on("click",function(){

@@ -5,6 +5,10 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="../resources/css/common.css">
   <link rel="stylesheet" type="text/css" href="../resources/swiper/dist/css/swiper.min.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
   <script type="text/javascript" src="../resources/js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="../resources/js/jquery-ui.1.12.1.js"></script>
   <script type="text/javascript" src="../resources/js/common.js"></script>
@@ -26,10 +30,19 @@
         </div>
         <div class="dual_conts">
             <div class="big_area"> 
-                <button class="share">공유</button>
+                <div class="share">
+                    <button>공유</button>
+                    <div>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                
                 <div class="news_contents">
-                    <div class="tb">
-                        <div>
+                    <div class="tb top">
+                        <div class="left">
                             김유정기자
                         </div>
                         <div class="right">
@@ -109,7 +122,7 @@
                     </li>
                 </ul>
                 
-                <button class="rec_at">기사추천</button>
+                <button class="rec_at">기사추천 <span class="count">1</span></button>
 
                 <div class="cmt_zone comment_view">
                     <div class="cmt_list">
@@ -166,7 +179,7 @@
                 </div>
 
                 <div>
-                    <p>지금 사람들이 많이보는 뉴스</p>
+                    <p class="detail_tit">지금 사람들이 많이보는 뉴스</p>
                     <div>
                         <ul class="list_type txt_list">
                             <li>
@@ -203,7 +216,7 @@
                 </div>
 
                 <div>
-                    <p>시선집중</p>
+                    <p class="detail_tit">시선집중</p>
                     <ul class="img_list type3 part3">
                         <li>
                             <a href=#>
@@ -269,53 +282,568 @@
                     </ul>
                 </div>
             </div>
-            <div class="small_area">
-                <div>
-
+            <div class="small_area real_lank">
+                <div class="add_item">
+                    <p class="title">
+                        실시간 인기기사
+                        <button class="more">더보기</button>
+                    </p>
+                    <div class="tab">
+                        <div class="tab_list">
+                            <div class="on">연예</div>
+                            <div>스포츠</div>
+                            <div>게임</div>
+                        </div>
+                        <div class="tab_items">
+                            <div class="on">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>1</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>2</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>3</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>4</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>5</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>6</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>7</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>8</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>9</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>10</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>1</span>
+                                            두번째탭 test
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>2</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>3</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>4</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>5</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>6</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>7</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>8</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>9</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>10</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>1</span>
+                                            세번째탭 test
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>2</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>3</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>4</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>5</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>6</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>7</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>8</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>9</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>10</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <p class="title">
-                    엑's 이슈
-                    <button class="more">더보기</button>
+                <div class="add_item">
+                    <p class="title">
+                        엑's 이슈
+                        <button class="more">더보기</button>
                     </p>
                     <ul class="img_list">
-                    <li class="">
-                        <a href="#">
-                            <div class="img_div">
-                                <div class="img type1">
-                                    <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                        <li class="">
+                            <a href="#">
+                                <div class="img_div">
+                                    <div class="img type1">
+                                        <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <p>
-                                    '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <div class="img_div">
-                                <div class="img type1">
-                                    <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                <div>
+                                    <p>
+                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                    </p>
                                 </div>
-                            </div>
-                            <div>
-                                <p>
-                                    '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
-                                </p>
-                            </div>
-                        </a>
-                    </li>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <div class="img_div">
+                                    <div class="img type1">
+                                        <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <div class="img_div">
+                                    <div class="img type1">
+                                        <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <div class="img_div">
+                                    <div class="img type1">
+                                        <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <div class="img_div">
+                                    <div class="img type1">
+                                        <img src="../resources/img/sample05.png" width="100%" height="auto" alt="sample"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-            
+
+                <div class="add_item">
+                    <p class="title">
+                        주간 인기 기사
+                        <button class="more">더보기</button>
+                    </p>
+                    <div class="tab">
+                        <div class="tab_list">
+                            <div class="on">연예</div>
+                            <div>스포츠</div>
+                            <div>게임</div>
+                        </div>
+                        <div class="tab_items">
+                            <div class="on">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>1</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>2</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>3</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>4</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>5</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>6</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>7</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>8</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>9</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>10</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>1</span>
+                                            두번째탭 test
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>2</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>3</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>4</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>5</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>6</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>7</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>8</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>9</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>10</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>1</span>
+                                            세번째탭 test
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>2</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>3</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>4</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>5</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>6</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>7</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>8</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>9</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>10</span>
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add_item">
+                    <p class="title">
+                        주간 인기 기사
+                    </p>
+                    
+                    <div class="photo_wrap">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <a href="#">
+                                    <img src="../resources/img/sample09.png" width="100%">
+                                    <p>송강 시선 사로잡는 명품 비주얼 화보</p>
+                                  </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                  <img src="../resources/img/sample09.png" width="100%">
+                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                  <img src="../resources/img/sample09.png" width="100%">
+                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                  <img src="../resources/img/sample09.png" width="100%">
+                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                  <img src="../resources/img/sample09.png" width="100%">
+                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
+                                </a>
+                            </div>
+
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </div>
   </div>
   <button class='btn_totop'>TOP</button>
  </body>
+ <script>
+    $(document).ready(function(){
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop:true,
+        navigation: {
+            nextEl: ".photo_wrap .swiper-button-next",
+            prevEl: ".photo_wrap .swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+    });
+   })
+ </script>
 </html>
