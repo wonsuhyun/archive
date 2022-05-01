@@ -2450,6 +2450,17 @@ email_none
 	padding: 0;
 	margin: 0;
 }
+.total_search{
+	position: relative;
+}
+.total_search .pg_title {
+	padding-top: 100px;
+}
+.total_search .full_close {
+	position: absolute;
+	right: 0;
+	top: 110px;
+}
 .total_search .sch_zone {
 	width: 100%;
 	max-width: 620px;
@@ -2990,6 +3001,10 @@ email_none
 }
 
 @media (max-width: 1200px) {
+	.total_search .full_close{
+		right: 30px;
+		top: 40px;
+	}
 	.list_page .part_last .gray_box > div{
 		width: 100%;
 		margin-right: 0;
