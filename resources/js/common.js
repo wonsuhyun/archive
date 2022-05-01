@@ -86,6 +86,10 @@ $(document).ready(function(){
 	})
 
 	popup();
+
+	$(".btn_totop").on("click",function(){
+		$("html").animate({ scrollTop: 0 });
+	})
 })
 
 //스크롤이벤트
@@ -117,17 +121,15 @@ function scrollEvent(){
 	}
 	
 	var str = "<button class='btn_totop'>TOP</button>"
-	if(window > 0) {
-		if ($(".btn_totop").length < 1){
-			$("body").append(str);
-			$(".btn_totop").on("click",function(){
-				$("html").animate({ scrollTop: 0 });
-			})
+
+	if ($(".btn_totop").length > 0){
+		if(window > 0) {
+			$(".btn_totop").show();
+		}else{
+			$(".btn_totop").hide();
 		}
-		$(".btn_totop").show();
-	}else{
-		$(".btn_totop").hide();
 	}
+	
 
 }
 
@@ -187,7 +189,7 @@ var XSP = {
 }
 
 window.onload = function(){
-	$(".main .img").each(function(){
+	$(".img").each(function(){
 		var elImg = $(this).find("img");
 		if (elImg.outerHeight() < $(this).outerHeight()){
 			var mg = ($(this).outerHeight() - elImg.outerHeight())/2;
