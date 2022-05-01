@@ -233,6 +233,9 @@ input[type=checkbox]:checked + label::after{
 .tb.type5 > div{
 	width: 20%;
 }
+.tb.type6 > div{
+	width: 16.5%;
+}
 .form_type {
 	width: 100%;
 }
@@ -301,7 +304,7 @@ input[type=checkbox]:checked + label::after{
 	background: url(../img/icon_tooltip.png) no-repeat center / contain;
 	vertical-align: middle;
 	margin-right:8px;
-	margin-top: -1px;
+	margin-top: -2px;
 }
 .red .tooltip {
 	background: url(../img/icon_tooltip_red.png) no-repeat center / contain;
@@ -1608,6 +1611,7 @@ login
 }
 .login .remem_id {
 	margin-top: 20px;
+	font-size: 13px;
 }
 
 .login .find_area {
@@ -1615,6 +1619,9 @@ login
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 35px;
+}
+.login .find_area  a {
+	font-size: 13px;
 }
 .login .find_area > div:first-child {
 	position: relative;
@@ -1863,15 +1870,16 @@ email_none
 	float: right;
 }
 .user_info .sns_login .btn_small {
-	background-color: #fff;
-	color: #686767;
+
 	font-size: 12px;
 	border: 1px solid #36363640;
 	padding: 2px 10px;
-}
-.user_info .sns_login .btn_small.on {
 	background-color: rgba(255,255,255,0.3);
 	color: #000;
+}
+.user_info .sns_login .btn_small.on {
+	background-color: #fff;
+	color: #686767;
 }
 .pw_change_noti .cont_sub_tit {
 	border-bottom: 1px solid #ededed;
@@ -2284,9 +2292,17 @@ email_none
 	font-weight: 200;
 	margin-bottom: 12px;
 }
+.comment_view .write_zone .txt_count{
+	font-size: 14px;
+	color: #9c9c9c;
+	position: absolute;
+	bottom:10px;
+	left: 15px;
+}
 .comment_view .write_zone {
 	border: 1px solid #e8e8e8;
 	padding: 15px;
+	position: relative;
 }
 .comment_view .write_zone textarea{
 	padding: 0;
@@ -2325,7 +2341,7 @@ email_none
 .comment_view .list .item .info_area .right {
 	font-weight: 200;
 }
-.comment_view .write_zone  .btn_wrap{
+.comment_view .write_zone .btn_wrap{
 	text-align: right;
 }
 .comment_view .list .item.ch {
@@ -2415,12 +2431,31 @@ email_none
     padding-top: 0;
     background: url(../img/icon_re.png) no-repeat left top;
 }
-.comment_view .btn_wrap.btm{
-	padding:30px 0;
+.comment_view .bor{
+	padding-bottom: 30px;
 	border-bottom: 1px solid #000;
 }
+.comment_view .btn_wrap.btm {
+	text-align: center;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+.comment_view .btn_wrap.btm:after {
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #d4d4d4;
+    position: absolute;
+    z-index: 1;
+}
 .comment_view  .more_btn{
-
+	left: calc( 50% - 100px );
+    z-index: 2;
+	position: absolute;
 	background-color: #fff;
 	max-width: 200px;
 	width: 100%;
@@ -2897,8 +2932,40 @@ email_none
 }
 .article_main .dual_conts .big_area .share{
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 8px;
+	top: 25px;
+}
+.article_main .dual_conts .big_area .share button {
+	padding-top: 23px;
+	background: url(../img/icon_share.png) no-repeat center top;
+	font-size:12px;
+	font-weight: 200;
+}
+.article_main .dual_conts .big_area .share > div a {
+	display: inline-block;
+	padding-top: 40px;
+	font-size:12px;
+	font-weight: 200;
+	width: 52px;
+	text-align: center;
+}
+.article_main .dual_conts .big_area .share > div{
+	background-color: #fff;
+	padding:25px 20px 15px 20px;
+	border-radius: 20px;
+	box-shadow: 10px 5px 20px rgba(0,0,0,0.4);
+}
+.article_main .dual_conts .big_area .share > div a:nth-of-type(1){
+	background: url(../img/icon_url1.png) no-repeat center top;
+}
+.article_main .dual_conts .big_area .share > div a:nth-of-type(2){
+	background: url(../img/icon_url2.png) no-repeat center top;
+}
+.article_main .dual_conts .big_area .share > div a:nth-of-type(3){
+	background: url(../img/icon_url3.png) no-repeat center top;
+}
+.article_main .dual_conts .big_area .share > div a:nth-of-type(4){
+	background: url(../img/icon_url4.png) no-repeat center top;
 }
 .article_main .news_contents .top .left {
 	font-size: 16px;
