@@ -32,11 +32,14 @@
             <div class="big_area"> 
                 <div class="share">
                     <button>공유</button>
-                    <div>
-                        <a href="#">카카오톡</a>
-                        <a href="#">페이스북</a>
-                        <a href="#">트위터</a>
-                        <a href="#">URL</a>
+                    <div class="share_pop">
+                        <button class="btn_close"></button>
+                        <div>
+                            <a href="#">카카오톡</a>
+                            <a href="#">페이스북</a>
+                            <a href="#">트위터</a>
+                            <a href="#">URL</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -844,6 +847,14 @@
           hide: false,
         },
     });
+
+    $(".share button").on("click",function(){
+        $(this).parent(".share").find(".share_pop").show()
+    })
+
+    $(".share_pop .btn_close").on("click",function(){
+        $(this).parent(".share_pop").hide()
+    })
    })
  </script>
 </html>
