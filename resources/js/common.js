@@ -25,6 +25,9 @@ $(document).ready(function(){
 		}
 	})
 
+	$(".full_close").on("click",function(){
+		$(this).parents(".full_pop").hide();
+	})
 
 	$(".tab .tab_list > div").on("click",function(){
 		var idx = $(this).index()

@@ -2914,6 +2914,13 @@ email_none
 	border-bottom: 2px solid #c9242b;
 	margin-bottom: 40px;
 }
+.full_pop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right: 0;
+}
 @media (min-width: 1201px) {
 
 	.lnb .lnb_list > div{
@@ -3238,6 +3245,9 @@ email_none
 }
 
 @media (max-width: 760px) {
+	.total_search .full_close{
+		right: 20px;
+	}
 	.notice li .tooltip{
 		top: 4px;
 	}
@@ -3757,7 +3767,7 @@ email_none
 	 
 			  opacity: 1;
 	}
-	40%, 60% {
+	35%, 75% {
 			opacity: 0.3;
 		}
 	}
@@ -3766,7 +3776,7 @@ email_none
 		opacity: 1;
 			  
 	}
-	40%, 60% {
+	35%, 75% {
 		opacity: 0.3;
 	}
 }
