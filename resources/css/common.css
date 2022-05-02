@@ -1571,7 +1571,7 @@ login
 	
 }
 .login .kakao {
-	background: url(../img/kakao.png) no-repeat 20px center/ 15px, #fee500 ;
+	background: url(../img/kakao.png) no-repeat 20px center/ 20px, #fee500 ;
 	color: #000;
 	font-size: 15px;
 	font-weight: 400;
@@ -1579,7 +1579,7 @@ login
 .login .naver{
 	border:1px solid #04cf5c;
 	color: #04cf5c;
-	background: url(../img/naver.png) no-repeat 20px center / 15px , #fff ;
+	background: url(../img/naver.png) no-repeat 20px center / 20px , #fff ;
 	font-size: 15px;
 	font-weight: 400;
 }
@@ -1759,13 +1759,13 @@ email_none
 	font-weight: 200;
 }
 .user_info .sns_login.kakao {
-	background: url(../img/kakao.png) no-repeat 20px center / 15px, #fee500;
+	background: url(../img/kakao.png) no-repeat 20px center / 20px, #fee500;
 	color: #000;
 }
 .user_info .sns_login.naver{
 	border:1px solid #04cf5c;
 	color: #04cf5c;
-	background: url(../img/naver.png) no-repeat 20px center / 15px, #fff;
+	background: url(../img/naver.png) no-repeat 20px center / 20px, #fff;
 }
 .user_info .sns_login .btn_tg {
 	position: absolute;
