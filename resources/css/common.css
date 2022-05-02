@@ -1869,15 +1869,16 @@ email_none
 .user_info.user_info2 .pw_info .btn_tg{
 	float: right;
 }
-.user_info .sns_login .btn_small {
-
+.user_info .sns_login .btn_small,
+.user_info .toggle_b .btn_small{
 	font-size: 12px;
 	border: 1px solid #36363640;
 	padding: 2px 10px;
 	background-color: #fff;
 	color: #000;
 }
-.user_info .sns_login .btn_small.on {
+.user_info .sns_login .btn_small.on,
+.user_info .toggle_b .btn_small.on{
 	background-color: #fff;
 	color: #686767;
 }
