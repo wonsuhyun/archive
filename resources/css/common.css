@@ -299,8 +299,8 @@ input[type=checkbox]:checked + label::after{
 }
 .tooltip {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	background: url(../img/icon_tooltip.png) no-repeat center / contain;
 	vertical-align: middle;
 	margin-right:8px;
@@ -336,8 +336,8 @@ input[type=checkbox]:checked + label::after{
 	margin-bottom: 13px;
 }
 .notice.small .tooltip {
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	margin-right: 5px;
 
 }
@@ -1571,7 +1571,7 @@ login
 	
 }
 .login .kakao {
-	background: url(../img/kakao.png) no-repeat 20px center, #fee500;
+	background: url(../img/kakao.png) no-repeat 20px center/ 15px, #fee500 ;
 	color: #000;
 	font-size: 15px;
 	font-weight: 400;
@@ -1579,7 +1579,7 @@ login
 .login .naver{
 	border:1px solid #04cf5c;
 	color: #04cf5c;
-	background: url(../img/naver.png) no-repeat 20px center, #fff;
+	background: url(../img/naver.png) no-repeat 20px center / 15px , #fff ;
 	font-size: 15px;
 	font-weight: 400;
 }
@@ -1759,13 +1759,13 @@ email_none
 	font-weight: 200;
 }
 .user_info .sns_login.kakao {
-	background: url(../img/kakao.png) no-repeat 20px center, #fee500;
+	background: url(../img/kakao.png) no-repeat 20px center / 15px, #fee500;
 	color: #000;
 }
 .user_info .sns_login.naver{
 	border:1px solid #04cf5c;
 	color: #04cf5c;
-	background: url(../img/naver.png) no-repeat 20px center, #fff;
+	background: url(../img/naver.png) no-repeat 20px center / 15px, #fff;
 }
 .user_info .sns_login .btn_tg {
 	position: absolute;
@@ -3618,8 +3618,8 @@ email_none
 		font-size: 13px;
 	}
 	.tooltip {
-		width:18px;
-		height:18px;
+		width:20px;
+		height:20px;
 	}
 
 	.intro.jp p, .intro.jp div{
