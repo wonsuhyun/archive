@@ -1824,7 +1824,7 @@ email_none
 	padding-bottom: 10px;
 } 
 
-.user_info .pw_change button {
+.user_info .pw_change > button {
 	position: absolute;
 	right: 0;
 	top: 2px;
