@@ -2077,20 +2077,20 @@ email_none
 }
 .main .main_part1 > div {
 	display: table-cell;
-	width: 25%;
+	width: 24.5%;
 	vertical-align: top;
 }
 .main .main_part1 > div:nth-of-type(2){
-	width: 50%;
+	width: 51%;
 	padding: 0 20px ;
 }
 .main .main_part1 > div .txt {
 	font-size: 18px;	
-	margin-top: 40px;
+	margin-top: 38px;
 }
 .main .main_part1 > div .txt > div > p {
 	border-top: 2px solid #000;
-	padding-top: 20px;
+	padding-top: 10px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -2105,6 +2105,7 @@ email_none
 }
 .main .main_part1 .txt_list li {
 	font-size: 18px;
+	min-height: 75px;
 }
 .main .main_part1 .txt_list li:nth-of-type(3){
 	border-bottom: none;
@@ -2133,8 +2134,8 @@ email_none
 .main .main_part1 .img_area a > div:nth-of-type(2) {
 	font-size: 18px;
 	font-size: 18px;
-	padding-top: 10px;
-	padding-bottom: 18px;
+	padding-top: 5px;
+	padding-bottom: 14px;
 	border-bottom: 1px solid #e0e0e0;
 	font-weight: 600;
 }
@@ -3570,6 +3571,9 @@ email_none
 	.main .main_part1 .img_area a > div:nth-of-type(2) p {
 		font-size: 16px;
 		font-weight: 400;
+	}
+	.main .main_part1 .txt_list li {
+		min-height: auto;
 	}
 	.main .main_part1 .txt_list li:nth-of-type(3){
 		border-bottom:1px solid #e0e0e0;
