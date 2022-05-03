@@ -3,12 +3,14 @@
  <head>
   <meta charset="UTF-8">
   <title></title>
-  <link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+  
   <link rel="stylesheet" type="text/css" href="../resources/swiper/dist/css/swiper.min.css">
+  
   <link
   rel="stylesheet"
   href="https://unpkg.com/swiper/swiper-bundle.min.css"
 />
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
   <script type="text/javascript" src="../resources/js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="../resources/js/jquery-ui.1.12.1.js"></script>
   <script type="text/javascript" src="../resources/js/common.js"></script>
@@ -49,9 +51,12 @@
                             김유정기자
                         </div>
                         <div class="right">
-                            <select>
-                                <option>언어선택</option>
-                            </select>
+                            <div class="select_wrap">
+                                <select>
+                                    <option>언어선택</option>
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
                     <img src="../resources/img/sample11.png" width="100%"/>
@@ -96,7 +101,6 @@
                     ⓒ 엑스포츠뉴스 (http://xportsnews.com)<br>
                     무단전재 및 재배포 금지 / 기사제보 및 보도자료 press@xportsnews.com
                 </p>
-
                 <ul class="another_ats">
                     <li>
                         <a href="#">
@@ -125,7 +129,7 @@
                     </li>
                 </ul>
                 
-                <button class="rec_at">기사추천 <span class="count">1</span></button>
+                <button class="rec_at off">기사추천 <span class="count">1</span></button>
 
                 <div class="cmt_zone comment_view">
                     <div class="cmt_list">
@@ -174,6 +178,8 @@
                             <p>
                                 <button class="more_btn">전체보기</button>
                             </p>
+                        </div>
+                        <div class="btn_wrap btm" >
                             <p class="mgt10">
                                 <button class="more_btn write_btn">작성하기</button>
                             </p>
@@ -218,8 +224,8 @@
                     </div>
                 </div>
 
-                <div>
-                    <p class="detail_tit">시선집중</p>
+                <div class="sw_conts">
+                    <p class="detail_tit mo_bor">시선집중</p>
                     <ul class="img_list type3 part3">
                         <li>
                             <a href=#>
@@ -228,7 +234,7 @@
                                         <img src="../resources/img/sample06.png" width="100%" height="auto" alt="sample"/>
                                     </div>
                                 </div>
-                                <p>조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어 </p>
+                                <p>조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어 조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어  </p>
                             </a>
                            
                         </li>
@@ -279,15 +285,62 @@
                                         <img src="../resources/img/sample13.png" width="100%" height="auto" alt="sample"/>
                                     </div>
                                 </div>
-                                <p>조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어 </p>
+                                <p>조선구마사’, 방어 논리를 생각하지 </p>
                             </a>
                         </li>
                     </ul>
+
+                    <div class="swiper mobile_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href=#>
+                                    <div class="img_div">
+                                        <div class="img type1">
+                                            <img src="../resources/img/sample06.png" width="100%" height="auto" alt="sample"/>
+                                        </div>
+                                    </div>
+                                    <p>조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어 조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어 </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href=#>
+                                    <div class="img_div">
+                                        <div class="img type1">
+                                            <img src="../resources/img/sample06.png" width="100%" height="auto" alt="sample"/>
+                                        </div>
+                                    </div>
+                                    <p>조선구마사’, 방어 논리를 생각하지 않는 것 </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href=#>
+                                    <div class="img_div">
+                                        <div class="img type1">
+                                            <img src="../resources/img/sample06.png" width="100%" height="auto" alt="sample"/>
+                                        </div>
+                                    </div>
+                                    <p>조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어 </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href=#>
+                                    <div class="img_div">
+                                        <div class="img type1">
+                                            <img src="../resources/img/sample06.png" width="100%" height="auto" alt="sample"/>
+                                        </div>
+                                    </div>
+                                    <p>조선구마사’, 방어 논리를 생각하지 않는 것도 창작의 자유일까 방어 </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
                 </div>
             </div>
             <div class="small_area real_lank">
                 <div class="add_item">
-                    <p class="title">
+                    <p class="title mo_no">
                         실시간 인기기사
                         <button class="more">더보기</button>
                     </p>
@@ -309,19 +362,19 @@
                                     <li>
                                         <a href="#">
                                             <span>2</span>
-                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자"박수홍 모르는 사망보험만 8개 10억 수혜자
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <span>3</span>
-                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자 "박수홍 모르는 사망보험만 8개 10억 수혜자 "박수홍 모르는 사망보험만 8개 10억 수혜자
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <span>4</span>
-                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자 "박수홍 모르는 사망보험만 8개 10억 수혜자 "박수홍 모르는 사망보험만 8개 10억 수혜자
                                         </a>
                                     </li>
                                     <li>
@@ -508,7 +561,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"'한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"'한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"'한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"'한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
                                     </p>
                                 </div>
                             </a>
@@ -522,7 +575,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                        '한의사♥' 장영란,
                                     </p>
                                 </div>
                             </a>
@@ -536,7 +589,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                        '한의사♥' 장영란, 단란한 가족
                                     </p>
                                 </div>
                             </a>
@@ -550,7 +603,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"'한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
                                     </p>
                                 </div>
                             </a>
@@ -564,7 +617,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        '한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
+                                        "사랑하는 시부모님과 함께"'한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"'한의사♥' 장영란, 단란한 가족 사진 공개 "사랑하는 시부모님과 함께"
                                     </p>
                                 </div>
                             </a>
@@ -735,7 +788,7 @@
                                     <li>
                                         <a href="#">
                                             <span>4</span>
-                                            "박수홍 모르는 사망보험만 8개 10억 수혜자
+                                            "박수홍 모르는 사망보험만 8개 10억 수혜자"박수홍 모르는 사망보험만 8개 10억 수혜자
                                         </a>
                                     </li>
                                     <li>
@@ -782,55 +835,43 @@
 
                 <div class="add_item">
                     <p class="title">
-                        주간 인기 기사
+                        화보
                     </p>
                     
                     <div class="photo_wrap">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                  <a href="#">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="../resources/img/sample09.png" width="100%">
+                                        <p>송강 시선 사로잡는 명품 비주얼 화보</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
                                     <img src="../resources/img/sample09.png" width="100%">
                                     <p>송강 시선 사로잡는 명품 비주얼 화보</p>
-                                  </a>
-                              </div>
-                              <div class="swiper-slide">
-                                <a href="#">
-                                  <img src="../resources/img/sample09.png" width="100%">
-                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                  <img src="../resources/img/sample09.png" width="100%">
-                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                  <img src="../resources/img/sample09.png" width="100%">
-                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                  <img src="../resources/img/sample09.png" width="100%">
-                                  <p>송강 시선 사로잡는 명품 비주얼 화보</p>
-                                </a>
-                            </div>
-
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                    <img src="../resources/img/sample09.png" width="100%">
+                                    <p>송강 시선 사로잡는 명품 비주얼 화보</p>
+                                    </a>
+                                </div>
                             </div>
                             <div class="swiper-scrollbar"></div>
-                          </div>
-                          <div class="swiper-button-next"></div>
-                          <div class="swiper-button-prev"></div>
+                        </div>
+                    
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
   </div>
-  <button class='btn_totop'>TOP</button>
+  <button class='btn_totop'></button>
  </body>
  <script>
     $(document).ready(function(){
@@ -846,7 +887,17 @@
           el: ".swiper-scrollbar",
           hide: false,
         },
-    });
+
+        
+        });
+
+        var swiper2 = new Swiper(".mobile_swiper", {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            pagination: {
+            el: ".mobile_swiper .swiper-pagination",
+            }
+        });
 
     $(".share button").on("click",function(){
         $(this).parent(".share").find(".share_pop").show()
@@ -854,6 +905,10 @@
 
     $(".share_pop .btn_close").on("click",function(){
         $(this).parent(".share_pop").hide()
+    })
+
+    $(".rec_at").on("click",function(){
+        $(this).toggleClass("off")
     })
    })
  </script>
