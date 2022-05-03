@@ -1402,6 +1402,10 @@ intro
 }
 .intro .part1 .imgs > div {
 	vertical-align: middle;
+	
+}
+.intro .part1 .imgs > div > img {
+
 }
 .intro .part2 .keywords{
 	margin-top: 20px;
@@ -4064,6 +4068,7 @@ email_none
 	.intro .part1 .imgs > div {
 		display: inline-block;
 		width: 30%;
+		margin-bottom: 20px;
 	}
 	.datepicker_wrap {
 		padding-right: 20px;
