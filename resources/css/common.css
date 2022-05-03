@@ -317,12 +317,12 @@ input[type=checkbox]:checked + label::after{
 	position: relative;
 	word-break: keep-all;
 	margin-bottom: 10px;
-	padding-left: 25px;
+	padding-left: 30px;
 }
 .notice li .tooltip {
 	position: absolute;
 	left: 0;
-	top: 2px;
+	top: 1px;
 }
 .notice .red li {
 	color: #c9242b;
@@ -331,7 +331,7 @@ input[type=checkbox]:checked + label::after{
 	font-size: 13px;
 }
 .notice.small li {
-	padding-left: 20px;
+	padding-left: 25px;
 	line-height: 15px;
 	margin-bottom: 13px;
 }
@@ -1013,6 +1013,7 @@ footer .footer2 .info {
 }
 footer .footer2 .info .logo{
 	margin-top: 20px;
+	margin-left: -23px;
 }
 
 footer .footer2 .info .footer_img {
@@ -1571,7 +1572,7 @@ login
 	
 }
 .login .kakao {
-	background: url(../img/kakao.png) no-repeat 20px center/ 20px, #fee500 ;
+	background: url(../img/kakao.png) no-repeat 20px center/ 23px, #fee500 ;
 	color: #000;
 	font-size: 15px;
 	font-weight: 400;
@@ -1759,7 +1760,7 @@ email_none
 	font-weight: 200;
 }
 .user_info .sns_login.kakao {
-	background: url(../img/kakao.png) no-repeat 20px center / 20px, #fee500;
+	background: url(../img/kakao.png) no-repeat 20px center / 23px, #fee500;
 	color: #000;
 }
 .user_info .sns_login.naver{
@@ -2681,6 +2682,7 @@ email_none
 }
 .list_page.type2 .big_area .img_list li a > div p {
 	padding-left: 27px;
+	padding-right: 10px;
 }
 
 .list_page.type2 .img_list li a > div .lank {
@@ -3334,8 +3336,11 @@ email_none
 	.total_search .full_close{
 		right: 20px;
 	}
+	.notice li{
+		padding-left: 25px;
+	}
 	.notice li .tooltip{
-		top: 4px;
+		top: 3px;
 	}
 	.list_page .pagenation.type2 li {
 		width: 25px;
