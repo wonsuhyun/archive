@@ -2853,7 +2853,7 @@ email_none
 	font-weight: 200;
 	font-size: 16px;
 }
-.article_main .at_header > div:last-child p.at_title{
+.article_main .at_header > div:last-child .at_title{
 	color: #000;
 	font-size: 30px;
 	font-weight: 400;
@@ -3315,7 +3315,7 @@ email_none
 	.article_main .dual_conts .big_area{
 		padding-left: 0;
 	}
-	.article_main .at_header > div:last-child p.at_title{
+	.article_main .at_header > div:last-child .at_title{
 		font-size: 21px;
 		font-weight: 600;
 	}
