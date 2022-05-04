@@ -2077,11 +2077,11 @@ email_none
 }
 .main .main_part1 > div {
 	display: table-cell;
-	width: 24%;
+	width: 24.2%;
 	vertical-align: top;
 }
 .main .main_part1 > div:nth-of-type(2){
-	width: 52%;
+	width: 51%;
 	padding: 0 20px ;
 }
 .main .main_part1 > div .txt {
