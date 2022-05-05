@@ -2879,6 +2879,7 @@ email_none
 }
 .article_main .news_contents{
 	font-size: 16px;
+	position: relative;
 }
 .article_main  .keyword_zone {
 	margin-top: 25px;
@@ -3095,6 +3096,9 @@ email_none
 	right: 12px;
 	top: 5px;
 }
+.article_main .sns_area {
+	text-align: center;
+}
 .article_main .sns_area a {
 	display: inline-block;
 	
@@ -3214,6 +3218,9 @@ email_none
 	 float:right;
 	margin-top: 20px;
 }
+.ad.mobile.scroll {
+	display: none;
+}
 @media (min-width: 1201px) {
 
 	.lnb .lnb_list > div{
@@ -3302,7 +3309,7 @@ email_none
 
 @media (max-width: 1200px) {
 	.ad.mobile {
-		display: inline-block !important;
+		display: inline-block;
 	}
 	.ad.pc {
 		display: none !important;

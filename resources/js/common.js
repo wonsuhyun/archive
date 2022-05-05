@@ -1,6 +1,9 @@
 /* object */
 $(document).ready(function(){
 
+	$(".ad_close").on("click",function(){
+		$(this).parent(".ad").remove();
+	})
 	$("header button.hamberger").on("click",function(){
 		$("html,body").addClass("scroll_none");
 		$(".lnb").show();
@@ -122,8 +125,6 @@ function scrollEvent(){
 			}
 		}
 	}
-	
-	var str = "<button class='btn_totop'>TOP</button>"
 
 	if ($(".btn_totop").length > 0){
 		if(window > 0) {
@@ -132,6 +133,15 @@ function scrollEvent(){
 			$(".btn_totop").hide();
 		}
 	}
+	if ($(document).outerWidth() < 1201) {
+		if(window > 0) {
+			$(".ad.scroll").show();
+		} else {
+			$(".ad.scroll").hide();
+		}
+	}
+
+
 	
 
 }
