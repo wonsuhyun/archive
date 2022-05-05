@@ -3308,6 +3308,9 @@ email_none
 }
 
 @media (max-width: 1200px) {
+	.article_main .at_header > div:last-child p .for_pc{
+		display: none;
+	}
 	.ad.mobile {
 		display: inline-block;
 	}
