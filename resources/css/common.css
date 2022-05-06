@@ -2877,6 +2877,7 @@ email_none
 	font-size: 30px;
 	font-weight: 400;
 }
+/*20220506*/
 .article_main .news_contents{
 	font-size: 16px;
 	position: relative;
@@ -3096,6 +3097,7 @@ email_none
 	right: 12px;
 	top: 5px;
 }
+/*20220506*/
 .article_main .sns_area {
 	text-align: center;
 }
@@ -3218,6 +3220,7 @@ email_none
 	 float:right;
 	margin-top: 20px;
 }
+/*20220506*/
 .ad.mobile.scroll {
 	display: none;
 }
@@ -3311,6 +3314,7 @@ email_none
 	.article_main .at_header > div:last-child p .for_pc{
 		display: none;
 	}
+	/*20220506*/
 	.ad.mobile {
 		display: inline-block;
 	}
